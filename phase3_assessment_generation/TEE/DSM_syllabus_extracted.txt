@@ -1,0 +1,631 @@
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Program: B Tech (Mechatronics Engineering) Semester: IV
+Course: Dynamic Systems Modeling Code: 702MH0C025
+Teaching Scheme Evaluation Scheme
+Lecture Practical Tutorial Internal Continuous Term End
+(Hours per (Hours (Hours Credit Assessment (ICA) Examinations (TEE)
+week) per week) per week) (Marks-50) (Marks -100)
+2 2 0 3 Marks Scaled to 50 Marks Scaled to 50
+Pre-requisite: Physics, Calculus, Linear Algebra and Differential Equations
+Course Objective
+The course develops student understanding of mathematical aspects of motion. It emphasizes the
+analysis of moving rigid body systems using constitutive laws based on force and energy. It also
+introduces students to synthesize solutions using scripting on a computational platform.
+Course Outcomes
+After completion of the course, the student will be able to -
+1. Understand and apply theoretical concepts in kinematics
+2. Analyze the given system using the Free Body Diagram
+3. Understand and calculate the forces acting on dynamic systems
+4. Apply the constitutive laws to analyze the dynamic systems of particles and rigid bodies
+5. Understand and calculate the energy of a dynamic system and power dissipated
+Detailed Syllabus
+Unit Description Duration
+Introduction
+Review of elementary dynamics, kinematics and kinetics, particles and
+1. 03
+rigid bodies, motion, position, velocity acceleration in Cartesian, Polar,
+Cylindrical and Spherical coordinate frames
+Constitutive Laws
+2. Force and Energy based formulations, Newton’s Laws, introduction to 04
+Lagrange’s Equations using Hamilton’s Principle, illustrative examples
+Rigid Body Kinematics
+3. Degrees of Freedom, position, velocity and acceleration in Fixed, Rotating 05
+and Moving Reference Frames
+Particle Kinetics
+4. 04
+Pulleys and mechanical advantage, 3D printer head motion analysis
+Rigid Body Kinetics
+5. Equations of motion of general one and two degree of freedom dynamic 06
+systems using Newton’s Laws, Rotating and Moving Coordinate Frames
+Work and Energy
+6. Work-Energy Principle, kinetic and potential energy of dynamic systems, 04
+power dissipated, infinitesimal work done by non-conservative forces
+Introduction to Advanced Topics
+7. Numerical simulations using ODE editors of computational software 04
+platforms
+Total 30
+Text Books
+1. G. H. Ginsberg, Advanced Dynamics, 2nd Edition, Cambridge University Press, 2007.
+2. D. Inman, Engineering Vibration, 4th Edition, Pearson, 2014.
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 1
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Reference Books
+1. N. Nise, Control Systems Engineering, 7th Edition, Wiley, 2014.
+2. S. H. Crandall, D. C. Karnopp, E. F. Kurtz, Jr. and D. C. Pridmore-Brown, Dynamics of
+Mechanical and Electromechanical Systems, Mc Graw-Hill, 1968.
+3. H. Gurocak, Industrial Motion Control, Wiley, 2015.
+Laboratory Work
+8 to 10 experiments based on the syllabus.
+_______________________
+Signature
+(Dean)
+_______________________
+Signature
+(Head of the Department)
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 2
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Program: B Tech (Mechatronics Engineering) Semester: IV
+Course: Microprocessor Systems and Interfacing Code: 702MH0C026
+Teaching Scheme Evaluation Scheme
+Lecture Practical Tutorial Internal Continuous Term End
+(Hours (Hours (Hours Credit Assessment (ICA) Examinations (TEE)
+per week) per week) per week) (Marks - 50) (Marks- 100)
+2 2 0 3 Marks Scaled to 50 Marks Scaled to 50
+Pre-requisite: -
+Course Objective
+The course introduces microprocessor architecture and enables students to learn programming and
+interfacing of microprocessor. This course will also help the students to understand the concepts of
+advanced processors, programming and interfacing of microcontrollers.
+Course Outcomes
+After completion of the course, the student will be able to -
+1. Define the fundamental concepts of computer organization
+2. Identify various types of microprocessors and microcontrollers based on chip
+number and internal architecture
+3. Explain the instruction set, addressing modes and assembler directives used in
+microprocessor and microcontroller programming
+4. Describe digital interfacing concepts and their applications
+5. Apply microprocessor and microcontroller programming concepts to develop solutions for
+embedded control applications
+Detailed Syllabus
+Unit Description Duration
+Basics of Computer Organization
+Basic organization of computer, Harvard and Von Neumann architecture, 04
+1.
+superscalar architecture, RISC and CISC, concept of microprocessor and
+microcontrollers
+Basic Microprocessor
+Microprocessor evolution and types, methods of identification (chip no., 04
+2. packaging), pin diagram, internal architecture, memory organization, timing
+diagram, speed improvement, designing of a computer using microprocessor,
+n eed of co-processor.
+Implementation of standard program structures for Microprocessor
+3. Addressing modes, assembler directives, instruction sets, assembly language 04
+programming.
+Digital Interfacing of Microprocessor
+4. Robotics and embedded control, A/D and D/A convertors, DMA data transfer 04
+using microprocessor, microprocessor based industrial process control system.
+Advanced Microprocessors
+32-Bit Microprocessors - Architecture, segment selector and descriptor,
+protected mode, virtual mode of operation, segmentation and segment
+5.
+descriptor tables (GDT and LDT), cache memories, cache architecture. 06
+64-bit Microprocessor - History of evolution, block diagram, branch prediction
+logic, and concept of pipelining.
+Basic Microcontroller
+Evolution of microcontroller, methods of identification (chip No, packaging),
+6.
+pin diagram, architecture, internal memory organization, counters and timers,
+04
+serial data communication, interrupts types and priorities, input/output ports.
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 3
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Microcontroller Programming and Hardware Interfacing
+7. Addressing modes, assembler directives and instruction set, programming timer 04
+and counters, interfacing of matrix keyboard, LCD, DAC and stepper motor.
+Total 30
+Text Books
+1. Badri Ram, Advanced Microprocessors and Interfacing, Tata McGraw Hill publication,
+2011.
+2. John Hayes, Computer Architecture and Organization, McGraw Hill, 2017.
+3. Muhammad Ali Mazidi, Janice Gillispie Mazidi, Rolin D. McKinlay, The 8051
+Microcontroller & Embedded system, 2nd Edition, Pearson Prentice Hall, 2012.
+Reference Books
+1. Muhammad Ali Mazidi, Janice Gillespie Mazidi, The 80x86 IBM PC & compatible computers.
+Volumes I & II, Assembly language, design, and interfacing, 2nd Edition, Prentice Hall
+International, 2000.
+2. Kai Kwang and F A Briggs, Computer Architecture and Parallel Processing, McGraw Hill,
+1984.
+3. A. Nagoor Kani, Microprocessor and Microcontroller, 2nd Edition, Tata McGraw Hill
+publication, 2012.
+4. Douglas Hall, Microprocessors Interfacing and Programming, Tata McGraw Hill
+publication, 2006.
+Laboratory Work
+8 to 10 experiments based on the syllabus.
+_______________________
+Signature
+(Dean)
+_______________________
+Signature
+(Head of the Department)
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 4
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Program: B Tech (Mechatronics Engineering) Semester: IV
+Course: Mechanics of Materials Code: 702MH0C027
+Teaching Scheme Evaluation Scheme
+Lecture Practical Tutorial Internal Continuous Term End Examinations
+(Hours per (Hours (Hours Credit Assessment (ICA) (TEE)
+week) per week) per week) (Marks - 50) (Marks- 100)
+2 2 0 3 Marks Scaled to 50 Marks Scaled to 50
+Pre-requisite: Calculus, Engineering Mechanics
+Course Objective
+The course presents an elaborate treatment of stresses and strains induced in solid bodies under
+load conditions. The course emphasizes the system parameters critical to calculate deformation in
+solids. The course teaches the students the use of analytical tools to solve problems of elementary
+engineering design.
+Course Outcomes
+After completion of the course, the student will be able to -
+1. Apply stress-strain relationships in beams to solve problems under various load conditions
+2. Determine stresses and strains in members subjected to various forms of loading in beams
+and select the appropriate theory of failure
+3. Understand and calculate the stresses and strains in torsion
+4. Determine stresses and strains in members subjected to combined loads
+5. Understand and calculate principle stresses for various geometries
+Detailed Syllabus
+Unit Description Duration
+Simple Stress & Strain
+Definitions of stress, axial, tensile and compressive stresses, shear stress. Hooke’s
+law, elastic limit, modulus of elasticity, yield stress, ultimate stress, modulus of
+1. rigidity, bulk modulus, Poisson’s ratio, factor of safety 05
+Testing of Materials
+Tensile test, compression test, shear test & hardness test, stress- strain diagram
+permissible stress: FOS, stress concentration factor
+Internal Forces & Stresses in Beams
+Shear force & bending moment diagrams for statically determinate beams for
+different types of loading, relationship between rate of loading, shear force and
+2. bending moment 12
+Theory of bending, classical flexural formula for straight beams & Bending stress
+distribution for different sections.
+Distribution of shear stress across commonly used plane sections
+Simple Theory of Torsion
+3. Torsion of circular shafts - solid and hollow, stresses and strains in shaft when 03
+transmitting power
+Direct & Bending Stress/ Bending moment combined with axial loads
+4. Application to members subjected to eccentric loads and chimneys, core of the 04
+section
+Principal Stresses
+5. General equations for transformation of stress, principles planes and principal 03
+stresses, Mohr’s circle
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 5
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Thin cylindrical and spherical shells
+6. Deformations in thin cylinders and spheres due to internal pressure, Hoop’s 03
+stress, longitudinal stress, compressibility, internal pressure analysis
+Total 30
+Text Books
+1. E. P. Popov, Mechanics of Materials, 2nd Edition, Prentice Hall, 2015.
+2. J. M. Gere and B. J. Goodno, Mechanics of Materials – SI Edition, 9th Edition, Cengage Learning,
+2018.
+Reference Books
+1. W. Nash and M. Potter, Schaum's Outlines: Strength of Materials, 5th Edition, McGraw Hill
+Professional, 2010.
+2. F. P. Beer, E. R. Johnston Jr. and J. T. DeWolf, Mechanics of Materials, 3rd Edition, Tata
+McGraw Hill, 2008.
+Laboratory Work
+8 to 10 experiments based on the syllabus.
+_______________________
+Signature
+(Dean)
+_______________________
+Signature
+(Head of the Department)
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 6
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Program: B Tech (Mechatronics Engineering) Semester: IV
+Course: Fluid Mechanics Code: 702MH0C028
+Teaching Scheme Evaluation Scheme
+Lecture Practical Tutorial Internal Continuous Term End
+(Hours per (Hours (Hours per Credit Assessment (ICA) Examinations (TEE)
+week) per week) week) (Marks - 50) (Marks- 100)
+2 2 0 3 Marks Scaled to 50 Marks Scaled to 50
+Pre-requisite: Calculus, Thermodynamics
+Course Objective
+The course elaborately explains the fluid properties and the static-dynamic nature of
+incompressible fluids. It emphasizes analytical techniques necessary for understanding the
+fundamental behavior of incompressible fluids. It teaches the students to use principles of laminar
+flow, turbulent flow and boundary layer theory to solve important practical problems.
+Course Outcomes
+After completion of the course, the student will be able to -
+1. Summarize various fluid properties and understand static, dynamic nature of fluids
+2. Analyze practical problems using fundamental concepts of fluid statics
+3. Analyze practical problems using fundamental concepts of fluid kinematics and dynamics
+4. Understand and analyze the fundamental behavior of laminar and turbulent flow, and
+boundary layer theory applied to internal flows
+5. Understand and analyze the fundamental behavior of laminar and turbulent flow, and
+boundary layer theory applied to external flows
+Detailed Syllabus
+Unit Description Duration
+Introduction to Fluid mechanics
+1. Concept of continuum, fluid properties, classification of fluid, Newton’s law 04
+of viscosity, stress-strain relationship, applications of fluid mechanics
+Fluid Statics
+2. Pressure variation in static fluid, forces on submerged surfaces, stability of 06
+floating bodies
+Fluid Kinematics & Dynamics
+Classification of flow, continuity equation, Euler equation of fluid flow,
+3. 08
+Bernoulli’s equation and its applications, conservation of mass, linear and
+angular momentum, Navier-Stokes equation and its applications
+Internal flows
+4. Pipe flow, friction factor, Moody’s Diagram, minor and major losses, pipe 06
+networks, concept of laminar and turbulent flows
+External Flows
+Concept of boundary layer approximation, boundary layer over flat plate,
+5. 06
+Boundary Layer thickness, Von-Karman momentum integral equation,
+concept of flow separation, control and concept of drag
+Total 30
+Text Books
+1. S. K. Som, G. Biswas, Introduction to Fluid Mechanics and Fluid Machines, 3rd Edition, McGraw
+Hill Education, 2017.
+2. Y.A. Cengel and J. M. Cimbala, Fluid Mechanics: Fundamentals and Applications, 3rd Edition,
+McGraw Hill Education, 2017.
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 7
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Reference Books
+1. P.N. Modi, S.M. Seth, Hydraulics and Fluid Mechanics including Hydraulic Machines, 22nd
+Edition, Standard Book House, 2019.
+2. F. M. White, Fluid Mechanics in SI Units, 8th Edition, McGraw Hill Education, 2017.
+Laboratory Work
+8 to 10 experiments based on the syllabus.
+_______________________
+Signature
+(Dean)
+_______________________
+Signature
+(Head of the Department)
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 8
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Program: B Tech (Mechatronics Engineering) Semester: IV
+Course: Electronic Systems Code: 702MH0C029
+Teaching Scheme Evaluation Scheme
+Lecture Practical
+Tutorial Internal Continuous Term End
+(Hours (Hours
+(Hours per Credit Assessment (ICA) Examinations (TEE)
+per per
+week) (Marks - 50) (Marks- 100)
+week) week)
+2 2 0 3 Marks Scaled to 50 Marks Scaled to 50
+Pre-requisite: Basic Electrical and Electronics Engineering, Physics
+Course Objective
+The basic objective is to provide the students with fundamental concepts of solid-state devices
+and their applications. This course helps the students to understand the construction, working
+principle, characteristics and applications of electronic devices such as diodes, transistors and Op-
+amps. Students will also be able to design different types of filters and timer circuits for the given
+specifications.
+Course Outcomes
+After completion of the course, the student will be able to -
+1. Choose the solid-state semiconductor devices for various applications
+2. Explain the applications of simple diode circuits
+3. Explain the applications of transistor circuits
+4. Explain the applications of op amp circuits
+5. Construct filter and timer circuits for various applications
+Detailed Syllabus
+Unit Description Duration
+Semiconductor Diodes and Applications
+1. PN Diode- construction, working and characteristics of PN junction diode. 03
+Other SC diodes - zener, LED, Schottky, photodiode.
+Bipolar Junction Transistor
+BJT- PNP and NPN transistors, currents in BJT, characteristics of BJT, BJT
+2. configurations (CE, CB and CC) 04
+Biasing of BJT- concept of biasing of BJT, Q-point and load line, voltage
+divider biasing of BJT in CE configuration
+Field Effect Transistors
+3. CMOS- construction of CMOS, static and dynamic characteristics of CMOS, 03
+and its small signal analysis
+Application od Diodes and Transistors
+Diode Applications- rectifiers, capacitive filter, clipper and clamper,
+SMPS, Linear Regulated Power Supply, mobile charger.
+4. 05
+BJT Applications- BJT as switch, BJT as amplifier
+CMOS Application- CMOS as amplifier, transmission gates, tri-state
+inverters, and buffers
+Foundation of Operational Amplifiers
+5. ideal and practical op-amps, inverting and non-inverting amplifier, op-amp 03
+parameters, fundamentals of IC-741.
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 9
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Linear Applications of Operational Amplifiers
+Amplifiers- adder, differentiator, integrator, instrumentation amplifiers with
+6. three op-amps 05
+Converters- V to I, I to V converters
+Oscillators- Wien Bridge Oscillator using op-amp.
+Non-Linear Applications of Operational Amplifiers
+Inverting Schmitt trigger
+7. Comparators- inverting and non-inverting comparator, zero crossing detector 04
+Precision Rectifiers- half wave and full wave precision rectifiers
+Sample and Hold Circuits and Logarithmic Amplifiers
+Timer and Filter Circuits
+Timers-IC555 timer, working of astable and monostable multivibrator
+8. circuits. 03
+Filters-first order filters - low pass, high pass, band pass filter, band reject
+filters
+Total 30
+Text Books
+1. Donald A. Neamen, Electronic Circuit Analysis and Design, 3rd Edition, McGraw Hill
+International, 2006.
+2. David A. Bell, Electronic Devices & Circuits, 5th Edition, Prentice Hall India Pvt. Ltd, 2008.
+3. R. A. Gayakwad, Op-Amps and Linear Integrated Circuits, 4th Edition, Prentice Hall of India
+Pvt. Ltd, 2009.
+4. Sergio Franco, Design with operational amplifiers and analog circuits, 3rd Edition, McGraw
+Hill, 2002.
+Reference Books
+1. Adel S. Sedra, Kenneth Carlers Smith, Microelectronic Circuits, Volume 1, Oxford
+University Press, 2004.
+2. Robert Boylestad & Louis Nashelsky, Electronic Devices & Circuit Theory, 9th Edition,
+Pearson Education India, 2007.
+3. Jacob Millman, Christos Halkias, Chetan Parikh, Integrated Electronics, 2nd Edition, McGraw
+hill Publication, 2009.
+4. Robert Coughlin and F. Driscoll, Operational Amplifiers and Linear Integrated Circuits, 6th
+Edition, Prentice Hall of India Pvt. Ltd, 2009.
+Laboratory Work
+8 to 10 experiments based on the syllabus.
+_______________________
+Signature
+(Dean)
+_______________________
+Signature
+(Head of the Department)
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 10
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Program: B Tech and MBA Tech (All branches) Semester: IV
+Course: Design Experience I Code: 702EE0C007
+Teaching Scheme Evaluation Scheme
+Internal
+Lecture Practical Tutorial Term End Examinations
+Continuous
+(Hours per (Hours per (Hours per Credit (TEE)
+Assessment (ICA)
+week) week) week) (Marks -50)
+(Marks - 50)
+0 2 0 1 Marks Scaled to 50 Marks Scaled to 50
+Pre-requisite: -
+Course Objective
+The course aims to introduce and explore a chosen problem, providing students with
+the opportunity to engage with a variety of real-world challenges presented by
+different agencies. Students come onboard at different stages of project completion.
+The course seeks to guide students in selecting a project that aligns with their interests,
+expertise, and career goals. Through this approach, the course integrates elements of
+Design Thinking and Research, to enhance practical learning and problem-solving
+skills.
+Course Outcomes
+After completion of the course, the student will be able to -
+1. Identify and explain real-world challenges in their context, relevance, and impact.
+2. Collaborate effectively within diverse teams to solve complex design problems
+3. Utilize Design Thinking principles to develop and iteratively refine practical solutions
+for the selected problem.
+4. Design and prototype innovative solutions that integrate research insights and
+feasibility analysis.
+5. Demonstrate effective oral and written communication skills relevant to the problem.
+Detailed Syllabus
+Unit Description Duration
+1. Introduction and Team Formation: Familiarize with real-world problems 30
+and project options and team formation based on interests and skills.
+Problem Analysis: Understand the problem context and requirements and
+conduct literature review relevant to the problem objectives. Design
+Thinking and Concept Development: Develop innovative solutions. Apply
+Design Thinking phases and refine concepts based on feedback. Project
+Management and Documentation: Ensure organized execution. Assign
+roles, manage tasks, and maintain design documents. Communication and
+Review: Present and refine project outcomes. Prepare presentations,
+conduct reviews, and incorporate feedback. Reflection and Improvement:
+Enhance skills and identify next steps. Reflect on lessons learned and
+document final outcomes.
+Total 30
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 11
+SVKM's Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management and Engineering
+Laboratory Work: The Laboratory work comprises various activities performed by the project teams for
+formulation, solution implementation and modification. Each team needs to submit the following
+documents:
+• Problem Statement Document
+• Project Development Report
+• Mid Semester Project Report
+• Final Report
+_______________________
+Signature
+(Dean)
+_______________________
+Signature
+(Head of the Department)
+B TECH/MECHATRONICS/SEM IV/ 2025-26/PAGE | 12
+SVKM’s Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management & Engineering
+Program: B Tech /MBA Tech (Except Data Science) Semester: III / IV
+Course: Probability and Statistics Module Code: 702BS0C076
+Teaching Scheme Evaluation Scheme
+Lecture Practical Internal
+Tutorial Term End Examinations
+(Hours (Hours Continuous
+(Hours per Credit (TEE)
+per per Assessment (ICA)
+week) (Marks- 100)
+week) week) (Marks - 50)
+2 2 0 3 Marks Scaled to 50 Marks Scaled to 50
+Pre-requisite: Basic understanding of algebra, calculus, and fundamental statistical concepts.
+Course Objective
+This course aims to instill in students a sound knowledge of probability theory and statistical
+techniques. It equips the students with intermediate to advanced level concepts and tools in
+probability and statistics that help them tackle relevant problems within the engineering domain.
+Course Outcomes
+After completion of the course, students will be able to -
+1. Understand the basic concepts of probability theory and statistics. (K2)
+2. Solve problems involving random variables, probability distributions and testing of
+hypothesis, correlation, and regression. (K3)
+3. Identify suitable probability distribution and testing techniques to solve problems. (K2)
+4. Apply knowledge of random variables, probability distributions, measures of central
+tendency, correlation and regression to solve real life problems. (K3)
+5. Analyse data samples using statistical methods. (K3)
+Detailed Syllabus
+Unit Description Duration
+1 Basic Probability
+03
+Probability spaces, conditional probability, independence; Bayes theorem.
+2 Random variables and Probability Distributions
+Discrete random variables, probability mass function, cumulative distribution
+function, Independent random variables, Continuous random variables,
+06
+distribution functions and densities, expectation, variance, raw and central
+moments of random variables, Binomial distribution, Poisson distribution,
+Normal distribution.
+3 Bivariate Distributions
+02
+Definition of Bivariate Distribution and its properties, Conditional densities.
+4 Basic Statistics
+Measures of Central tendency; Moments, Moment generating function,
+02
+skewness, kurtosis.
+Mean and variance of Binomial distribution & Poisson distribution, Moments,
+skewness & kurtosis for Normal distribution.
+_________________ AY 2025-26
+Signature
+(Head of the Department)
+SVKM’s Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management & Engineering
+5
+Testing of hypothesis
+6
+Point estimation, Interval estimate and Confidence interval, Criteria for good
+estimates, Null and Alternate hypothesis, Test Statistic, Type I and Type II
+errors, One-tailed and two-tailed test, Critical region.
+Large sample statistical test for mean, Large sample statistical test for
+6
+proportion, t-test for small samples, Test for variance- F test, Chi-square test for
+Goodness of fit and independence of attributes, Analysis of variance.
+6 Linear Statistical Models
+05
+Scatter diagram, Linear regression and correlation, Least squares method, Rank
+correlation, Multiple regression.
+Total 30
+Text Books
+1. Veerarajan T, Probability, Statistics and Random Processes, McGraw Hill Education, 4th
+Edition, 2017.
+2. S. Ross, A First Course in Probability, Pearson Education India, 9th Edition, 2013.
+Reference Books
+1. W. Feller, An Introduction to Probability Theory and its Applications, Vol. 1, John Wiley & Sons,
+3rd Edition, 2017.
+2. Murray R. Spiegel, John J. Schiller, R. Alu Srinivasan, Probability and Statistics, McGraw Hill
+Education, 4th Edition, 2013.
+3. J. C. W. Rayner, G. C. Livingston Jr., An Introduction to Cochran-Mantel-Haenszel Testing and
+Nonparametric ANOVA, Wiley series, 2023.
+4. G. Grolemund, Hands-on programming with R: Write your own functions and simulations, O'Reilly
+Media Inc., 2014.
+5. S. Rakshit, R for beginners, Tata McGraw Hill India, 2017.
+Laboratory Work
+8 to 10 programming experiments based on the syllabus.
+_________________ AY 2025-26
+Signature
+(Head of the Department)
+SVKM’s Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management & Engineering
+Program: B. Tech Civil , Mechanical / Mechatronics Semester: I/II / IV
+Engineering
+Course/Module: Chemistry Module Code: 702BS0C068
+Teaching Scheme Evaluation Scheme
+Internal
+Lecture Practical Tutorial Term End
+Continuous
+(Hours per (Hours per (Hours per Credit Examinations (TEE)
+Assessment (ICA)
+week) week) week) (Marks- 100)
+(Marks - 50)
+2 2 0 3 Marks Scaled to 50 Marks Scaled to 50
+Prerequisite: HSC level Chemistry
+Course Objective:
+The aim is to acquaint students with engineering materials like lubricants, polymers, nanomaterials
+and composites. Also to familiarize them with the industrial importance of water chemistry,
+application of fuels and concept of metal corrosion.
+Course Outcomes:
+After completion of the course, students will be able to-
+1. Explain the basic concepts of polymers, their types, and applications (K2)
+2. Apply knowledge of lubrication properties and numerical problem-solving (K3)
+3. Evaluate combustion processes and the characteristics of different types of fuels by solving
+related numerical problems (K3)
+4. Assess the chemistry of water hardness, and softening methods, and solve related numerical
+problems (K3)
+5. Investigate the properties and applications of engineering materials, composites, and
+nanomaterials (K3)
+Detailed Syllabus
+Unit Description Duration
+1. Polymers
+Introduction, basic concepts of degree of polymerization, tacticity, melting
+and glass transition temperature and its importance. Types of
+5
+polymerizations (Addition, condensation and co-polymerization). Smart
+polymer materials, conducting polymers, liquid crystals, applications of
+polymers.
+2. Lubricants
+Definition, Mechanism of lubrication, Properties- viscosity, viscosity index,
+4
+flash & fire, cloud & pour points, oiliness, saponification & acid value
+(numericals based on saponification and acid value)
+_________________ AY 2025-26
+Signature
+(Head of the Department)
+SVKM’s Narsee Monjee Institute of Management Studies
+Mukesh Patel School of Technology Management & Engineering
+3.
+Fuels & Combustion
+Discuss the definition, classification and characteristics. Calculation of
+Calorific Value-Theoretical & Experimental method (Bomb calorimeter).
+Solid Fuels: Coal, proximate and ultimate analysis, Numerical based on
+analysis of coal. (Dulong’s formula) and bomb calorimetry. Combustion: 6
+calculation on air and oxygen requirement.
+Liquid fuels: Mining of Petroleum, Cracking, Reforming, Knocking in IC
+engines, Octane number, Cetane number & anti-knocking agents (TEL and
+MTBE) Gaseous fuel: (LPG, CNG) Composition, properties and application.
+4. Water Chemistry
+Concept of hardness of water, types of hardness and its determination by
+EDTA methods, numerical based on water hardness. Water softening 5
+processes by: Lime-soda method, ion-exchange process and reverse osmosis
+process. Role of water as a universal solvent.
+5. Chemistry of Corrosion and protection
+Introduction, types of corrosion, chemical and electrochemical theories of
+Corrosion and their sub-types (corrosion by oxygen and other gases and
+liquids), factors affecting corrosion, preventive measures for corrosion- 5
+Cathodic and anodic protection methods, use of protective coatings
+(galvanization, tinning, metal cladding, electroplating, organic coatings like
+paints and varnishes).
+6. Chemistry of Important Engineering Materials and Nanomaterials
+Introduction to alloys (steels, special steels, Carbon steel, brass, bronze and
+applications).
+Introduction to composites; Classification (Polymer, Metal & Ceramic
+composites, Cement), applications of composites. 5
+Introduction to nanomaterials, Structural features and properties of
+Nanomaterials, recent advances in nanomaterials, application of nano
+materials in catalysis, medicine, construction chemicals, paints and pigments
+and heat transfer fluids.
+Total 30
+Text Books
+1. Palanna. O.G., Engineering Chemistry, 1st Edition Tata McGraw Hill Education. Pvt. Ltd, 2009.
+Reference Books
+1. Advance Organic Chemistry, 7th edition, Jerry March,2013
+2. P. W. Atkins, Physical Chemistry, 9th Edition, ELBS/Oxford, 2010.
+3. Textbook of Nanoscience and Nanotechnology, B.S. Murty, P. Shankar, Baldev Raj, B B
+Rath, James Murday, Springer Science, 2013
+Laboratory Work
+8 to 10 experiments based on the syllabus.
+_________________ AY 2025-26
+Signature
+(Head of the Department)

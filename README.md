@@ -27,9 +27,11 @@ AI_Curriculum_Engineering_DSM_2026/
 │   └── notebooks/                      Full generated output: Teacher/ (31) + Student/ (30) Jupyter notebooks
 │
 ├── phase3_assessment_generation/       Phase 3 — deterministic, parameterised assessment generation
+│   ├── generate_m1_question_papers.py
 │   ├── generate_m2_question_papers_v2.py
 │   ├── generate_m3_question_papers_v2.py
-│   └── sample_generated_assessments/   Real generated M2/M3 question papers + model-answer keys
+│   ├── sample_generated_assessments/   Real generated M2/M3 question papers + model-answer keys
+│   └── TEE/                           Term-End Examination generator (CO/Bloom's-tagged, 3 sets + QBMS format + re-exam)
 │
 ├── phase4_sfpbl_evaluation/            Phase 4 — SF-PBL exhibition evaluation & analytics
 │   ├── README.md                       Notes on overlap with the companion SF-PBL repository
