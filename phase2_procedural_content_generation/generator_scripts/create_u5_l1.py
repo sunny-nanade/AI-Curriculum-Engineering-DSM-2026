@@ -34,12 +34,12 @@ notebook["cells"].append({
     "cell_type": "markdown",
     "metadata": {},
     "source": [
-        "# ⚙️ Unit 5 Lecture 1: Equations of Motion for Rigid Bodies\n",
+        "# Unit 5 Lecture 1: Equations of Motion for Rigid Bodies\n",
         "## Translation + Rotation Dynamics\n",
         "\n",
         "---\n",
         "\n",
-        "### 🎯 Learning Objectives\n",
+        "### Learning Objectives\n",
         "By the end of this lecture, you will be able to:\n",
         "1. **Derive equations of motion** for rigid bodies (translation + rotation)\n",
         "2. **Apply Newton's laws** to combined translational and rotational motion\n",
@@ -47,7 +47,7 @@ notebook["cells"].append({
         "4. **Solve rolling problems** using τ = I·α and constraint equations\n",
         "5. **Analyze 1-DOF rigid body systems** (pendulums, rolling objects, rotating disks)\n",
         "\n",
-        "### 📚 Context\n",
+        "### Context\n",
         "**From particle kinetics to rigid body kinetics:**\n",
         "- Unit 4: Particles (point masses, no rotation) → ΣF = ma\n",
         "- **This unit**: Rigid bodies (extended objects, rotation matters) → ΣF = ma **AND** Στ = I·α\n",
@@ -57,7 +57,7 @@ notebook["cells"].append({
         "- Energy: rotation contributes ½Iω² (not just ½mv²)\n",
         "- Design: moment of inertia affects response (flywheel, gyroscope)\n",
         "\n",
-        "### 🔑 Key Equations Preview\n",
+        "### Key Equations Preview\n",
         "$$\\boxed{\\sum \\mathbf{F} = m \\mathbf{a}_{cm}} \\quad \\text{(Translation)}$$\n",
         "$$\\boxed{\\sum \\tau = I \\alpha} \\quad \\text{(Rotation about CM or fixed axis)}$$\n",
         "\n",
@@ -86,7 +86,7 @@ notebook["cells"].append({
         "plt.style.use('seaborn-v0_8-darkgrid')\n",
         "plt.rcParams['figure.figsize'] = (12, 4)\n",
         "\n",
-        "print(\"✓ Libraries imported successfully!\")\n",
+        "print(\"Libraries imported successfully!\")\n",
         "print(\"  Ready to analyze rigid body dynamics...\")\n"
     ]
 })
@@ -97,7 +97,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part A: Rigid Body Equations of Motion 🔄\n",
+        "## Part A: Rigid Body Equations of Motion \n",
         "\n",
         "### What is a Rigid Body?\n",
         "**Definition**: An extended object where distances between all points remain constant\n",
@@ -200,9 +200,9 @@ notebook["cells"].append({
         "# Verify parallel axis theorem for rod\n",
         "d = L / 2  # Distance from center to end\n",
         "I_rod_end_check = I_rod_center + m * d**2\n",
-        "print(f\"\\n✓ Parallel Axis Theorem Check:\")\n",
+        "print(f\"\\nParallel Axis Theorem Check:\")\n",
         "print(f\"  Rod about end (formula): {I_rod_end:.4f} kg·m²\")\n",
-        "print(f\"  Rod about end (PAT):     {I_rod_end_check:.4f} kg·m² ✓\")\n",
+        "print(f\"  Rod about end (PAT):     {I_rod_end_check:.4f} kg·m² \")\n",
         "\n",
         "# Visualize distribution\n",
         "fig, ax = plt.subplots(figsize=(10, 6))\n",
@@ -225,7 +225,7 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(\"\\n💡 Insight: Hollow cylinder has largest I (mass farthest from axis)\")\n",
+        "print(\"\\nInsight: Hollow cylinder has largest I (mass farthest from axis)\")\n",
         "print(\"            Solid sphere has smallest I (mass closer to axis)\")\n"
     ]
 })
@@ -236,7 +236,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part B: Rolling Motion Analysis 🎯\n",
+        "## Part B: Rolling Motion Analysis \n",
         "\n",
         "### Classic Problem: Rolling Down an Incline\n",
         "\n",
@@ -407,8 +407,8 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(\"\\n🏆 Winner: Solid Sphere (smallest β → fastest!)\")\n",
-        "print(\"💡 Key insight: Energy splits between translation and rotation.\")\n",
+        "print(\"\\nWinner: Solid Sphere (smallest β → fastest!)\")\n",
+        "print(\"Key insight: Energy splits between translation and rotation.\")\n",
         "print(\"   Objects with smaller β convert more PE → translational KE → faster!\")\n"
     ]
 })
@@ -419,7 +419,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part C: 1-DOF Rigid Body Systems 🔄\n",
+        "## Part C: 1-DOF Rigid Body Systems \n",
         "\n",
         "### Example: Physical Pendulum\n",
         "\n",
@@ -498,7 +498,7 @@ notebook["cells"].append({
         "print(f\"  Natural frequency: {omega_n:.4f} rad/s\")\n",
         "print(f\"  Period (rod): {T_rod:.4f} s\")\n",
         "print(f\"  Period (simple, L={L}m): {T_simple:.4f} s\")\n",
-        "print(f\"  Ratio: T_rod/T_simple = {T_rod/T_simple:.4f} = √(2/3) ✓\")\n",
+        "print(f\"  Ratio: T_rod/T_simple = {T_rod/T_simple:.4f} = √(2/3) \")\n",
         "\n",
         "# Equation of motion: θ'' + ω_n^2 θ = 0\n",
         "def pendulum_ode(y, t):\n",
@@ -576,9 +576,9 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(f\"\\n✓ Period from simulation: {t[np.argmax(theta[50:])+50] * 2:.4f} s\")\n",
+        "print(f\"\\nPeriod from simulation: {t[np.argmax(theta[50:])+50] * 2:.4f} s\")\n",
         "print(f\"  (matches theoretical: {T_rod:.4f} s)\")\n",
-        "print(f\"\\n💡 Energy conservation: {E_total[0]:.6f} → {E_total[-1]:.6f} J (excellent!)\")\n"
+        "print(f\"\\nEnergy conservation: {E_total[0]:.6f} → {E_total[-1]:.6f} J (excellent!)\")\n"
     ]
 })
 
@@ -588,7 +588,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part D: Pure Rotation - Spinning Disk 💿\n",
+        "## Part D: Pure Rotation - Spinning Disk \n",
         "\n",
         "### Problem: Disk with Applied Torque\n",
         "\n",
@@ -729,7 +729,7 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(\"\\n💡 Insight:\")\n",
+        "print(\"\\nInsight:\")\n",
         "print(\"  Case 1: Linear acceleration → just like F=ma for rotation!\")\n",
         "print(\"  Case 2: Exponential decay → energy dissipated by friction\")\n"
     ]
@@ -741,7 +741,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## 📝 Summary\n",
+        "## Summary\n",
         "\n",
         "### Key Equations\n",
         "\n",
@@ -792,7 +792,7 @@ notebook["cells"].append({
         "\n",
         "---\n",
         "\n",
-        "### 🧪 Practice Problems\n",
+        "### Practice Problems\n",
         "\n",
         "1. **Yo-yo**: Calculate acceleration down string (combined rolling + unwinding)\n",
         "2. **Flywheel**: How long to spin up from rest with constant torque?\n",
@@ -809,17 +809,17 @@ with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(notebook, f, indent=1, ensure_ascii=False)
 
 print("=" * 60)
-print("✓ Unit 5 Lecture 1 Created Successfully!")
+print("Unit 5 Lecture 1 Created Successfully!")
 print("=" * 60)
 print(f"\nFile: {output_path}")
 print(f"\nNotebook structure:")
-print(f"  Total cells: {len(notebook['cells'])}")
-print(f"  Markdown: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'markdown')}")
-print(f"  Code: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'code')}")
+print(f"Total cells: {len(notebook['cells'])}")
+print(f"Markdown: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'markdown')}")
+print(f"Code: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'code')}")
 print(f"\nContent:")
-print(f"  Part A: Rigid Body EOMs (Translation + Rotation)")
-print(f"  Part B: Rolling Motion Analysis (Race down incline)")
-print(f"  Part C: 1-DOF Systems (Physical pendulum)")
-print(f"  Part D: Pure Rotation (Spinning disk)")
+print(f"Part A: Rigid Body EOMs (Translation + Rotation)")
+print(f"Part B: Rolling Motion Analysis (Race down incline)")
+print(f"Part C: 1-DOF Systems (Physical pendulum)")
+print(f"Part D: Pure Rotation (Spinning disk)")
 print(f"\nDuration: ~90 minutes")
 print(f"\nReady to test!")

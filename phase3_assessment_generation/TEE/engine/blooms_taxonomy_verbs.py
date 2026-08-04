@@ -99,7 +99,7 @@ def display_blooms_taxonomy():
         print(f"Level {level_data['level']}: {level_data['name'].upper()}")
         print(f"Description: {level_data['description']}")
         print(f"Action Verbs: {', '.join(level_data['verbs'][:15])}")
-        print(f"             ... and {len(level_data['verbs']) - 15} more")
+        print(f"... and {len(level_data['verbs']) - 15} more")
         print()
 
 if __name__ == "__main__":

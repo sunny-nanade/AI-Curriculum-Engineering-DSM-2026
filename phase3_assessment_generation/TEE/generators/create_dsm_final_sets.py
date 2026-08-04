@@ -835,6 +835,6 @@ if __name__ == "__main__":
         add_synoptic_table(doc)
         path = f"Final Papers/DSM_QP_Set{num}_FINAL.docx"
         doc.save(path)
-        print(f"  [OK] {path}")
+        print(f"[OK] {path}")
 
     print("\nDone — 3 DSM question papers with identical synoptic table.")

@@ -115,7 +115,7 @@ def answers_set1(doc):
     point(doc, "a = (m₁ − m₂)g / (m₁ + m₂) = (2)(9.81)/8 = 2.453 m/s²", "1.5")
     point(doc, "T = 2m₁m₂g / (m₁ + m₂) = 2(5)(3)(9.81)/8 = 36.79 N", "1.5")
     point(doc, "v(1.5 s) = a × t = 2.453 × 1.5 = 3.68 m/s", "1")
-    point(doc, "Check: m₂g = 29.43 N < T = 36.79 N < m₁g = 49.05 N ✓", "1")
+    point(doc, "Check: m₂g = 29.43 N < T = 36.79 N < m₁g = 49.05 N ", "1")
     sep(doc)
 
     # ---- Q1(d) ----
@@ -271,7 +271,7 @@ def answers_set1(doc):
     point(doc, "Normal N = 19.62 N (upward)")
     point(doc, "Kinetic friction f_k = μ_k N = 0.25(19.62) = 4.905 N (forward, in belt direction)", "2")
     note(doc, "FBD shows: block on belt surface; W↓, N↑, f_k→ (direction of belt motion)")
-    point(doc, "Check: package initially slower than belt → belt drags package forward → kinetic friction acts in belt direction ✓", "2")
+    point(doc, "Check: package initially slower than belt → belt drags package forward → kinetic friction acts in belt direction ", "2")
     marks_note(doc, "Calculations [6 marks]:")
     point(doc, "a = f_k/m = 4.905/2 = 2.453 m/s²", "1.5")
     point(doc, "Time to match: t = (v₂ − v₁)/a = 1.5/2.453 = 0.612 s", "1.5")
@@ -387,7 +387,7 @@ def answers_set2(doc):
     point(doc, "a = (7 − 5)(9.81)/(7 + 5) = 2(9.81)/12 = 1.635 m/s²", "1.5")
     point(doc, "T = 2m₁m₂g/(m₁ + m₂) = 2(7)(5)(9.81)/12 = 57.225 N", "1.5")
     point(doc, "v(2 s) = 1.635 × 2 = 3.27 m/s", "1")
-    point(doc, "Check: m₂g = 49.05 < T = 57.23 < m₁g = 68.67 ✓", "1")
+    point(doc, "Check: m₂g = 49.05 < T = 57.23 < m₁g = 68.67 ", "1")
 
     heading(doc, "Q2 (d)  —  CNC 3D Path [5 marks]", 2)
     point(doc, "Given: P₀ = (10, 20, 5), P₁ = (110, 70, 35) mm, F = 50 mm/s")
@@ -428,7 +428,7 @@ def answers_set2(doc):
     point(doc, "ω_out = 1500/15 = 100 RPM = 10.47 rad/s", "1")
     point(doc, "τ_out = 0.5 × 15 = 7.5 N·m (ideal)", "1")
     point(doc, "P_in = 0.5 × 2π(1500)/60 = 0.5 × 157.08 = 78.54 W", "1")
-    point(doc, "P_out = τ_out × ω_out = 7.5 × 10.47 = 78.54 W → Power conserved ✓", "1")
+    point(doc, "P_out = τ_out × ω_out = 7.5 × 10.47 = 78.54 W → Power conserved ", "1")
     sep(doc)
 
     # ---- Q4 ----
@@ -484,7 +484,7 @@ def answers_set2(doc):
     point(doc, "W_engine = F_engine × 0.5(v₁ + v₂) × t = 3400 × 30 × 8 = 816000 J", "0.5")
     point(doc, "P_avg = W/t = 816000/8 = 102000 W = 102 kW", "1")
     point(doc, "P_inst(40 m/s) = F_engine × v = 3400 × 40 = 136000 W = 136 kW", "1.5")
-    note(doc, "Alternative: P_avg = F_engine × v_avg = 3400 × 30 = 102 kW ✓")
+    note(doc, "Alternative: P_avg = F_engine × v_avg = 3400 × 30 = 102 kW ")
 
     heading(doc, "Q5 (d)  —  Collision [5 marks]", 2)
     point(doc, "Given: m_A = m_B = 2 kg, v_A1 = 6 m/s, v_B1 = 0, e = 0.5")
@@ -586,14 +586,14 @@ def answers_set3(doc):
     point(doc, "a = (6 − 4)(9.81)/(6 + 4) = 2(9.81)/10 = 1.962 m/s²", "1.5")
     point(doc, "T = 2(6)(4)(9.81)/10 = 470.88/10 = 47.09 N", "1.5")
     point(doc, "v(1 s) = 1.962 × 1 = 1.962 m/s", "1")
-    point(doc, "Check: m₂g = 39.24 < T = 47.09 < m₁g = 58.86 ✓", "1")
+    point(doc, "Check: m₂g = 39.24 < T = 47.09 < m₁g = 58.86 ", "1")
     sep(doc)
 
     # ---- Q1(d) ----
     heading(doc, "Q1 (d)  —  Coordinate Conversions [5 marks]")
     point(doc, "(6, 8) → polar: r = √(36 + 64) = √100 = 10; θ = arctan(8/6) = 53.13°", "2")
     point(doc, "(ρ = 3, φ = 45°, z = 4) → Cartesian: x = 3 cos 45° = 2.121 m, y = 3 sin 45° = 2.121 m, z = 4 m", "2")
-    point(doc, "Verification: |r| = √(2.121² + 2.121² + 4²) = √(4.5 + 4.5 + 16) = √25 = 5 m; also √(ρ² + z²) = √(9 + 16) = 5 ✓", "1")
+    point(doc, "Verification: |r| = √(2.121² + 2.121² + 4²) = √(4.5 + 4.5 + 16) = √25 = 5 m; also √(ρ² + z²) = √(9 + 16) = 5 ", "1")
     sep(doc)
 
     # ---- Q2 ----
@@ -684,7 +684,7 @@ def answers_set3(doc):
     point(doc, "Rod (L = 1) about center: I = mL²/12 = 5(1)/12 = 0.417 kg·m²", "1")
     point(doc, "Rod about end: I = mL²/3 = 5/3 = 1.667 kg·m²", "1")
     point(doc, "Solid sphere (R = 0.2): I = 2mR²/5 = 2(5)(0.04)/5 = 0.08 kg·m²", "1")
-    point(doc, "PAT check for rod: 0.417 + 5(0.5²) = 0.417 + 1.25 = 1.667 ✓", "1")
+    point(doc, "PAT check for rod: 0.417 + 5(0.5²) = 0.417 + 1.25 = 1.667 ", "1")
 
     heading(doc, "Q4 (d)  —  Slider-Crank at 6000 RPM, θ = 90° [5 marks]", 2)
     point(doc, "Given: r = 50 mm, L = 150 mm, n = 6000 RPM, θ = 90°")
@@ -759,7 +759,7 @@ def answers_set3(doc):
     point(doc, "N₂ = mg = 29.43 N; f₂ = 0.3(29.43) = 8.83 N", "1")
     point(doc, "½mv² = f₂ d → d = 43.41/8.83 = 4.92 m", "2")
     point(doc, "Total friction: 24.11 + 8.83 × 4.92 = 24.11 + 43.41 = 67.52 J", "1")
-    point(doc, "Energy check: All PE (67.52 J) dissipated by friction ✓ (started and ended at rest)", "1")
+    point(doc, "Energy check: All PE (67.52 J) dissipated by friction (started and ended at rest)", "1")
     sep(doc)
 
     # ---- Q7 ----
@@ -770,7 +770,7 @@ def answers_set3(doc):
     marks_note(doc, "FBD [3 marks]:")
     point(doc, "Weight: W = 2(9.81) = 19.62 N ↓; Normal: N = 19.62 N ↑", "1")
     point(doc, "Kinetic friction: f_k = 0.25(19.62) = 4.905 N → (forward, belt pulls package)", "1")
-    point(doc, "Package is slower than belt: relative motion of package w.r.t. belt is backward → friction acts forward ✓", "1")
+    point(doc, "Package is slower than belt: relative motion of package w.r.t. belt is backward → friction acts forward ", "1")
     marks_note(doc, "Kinematics [4 marks]:")
     point(doc, "a = f_k/m = 4.905/2 = 2.453 m/s²", "1")
     point(doc, "t = Δv/a = 1.5/2.453 = 0.612 s", "1")
@@ -779,7 +779,7 @@ def answers_set3(doc):
     point(doc, "Package displacement: s_p = v₁t + ½at² = 1.5(0.612) + ½(2.453)(0.374) = 0.918 + 0.459 = 1.377 m", "1")
     point(doc, "Belt displacement: s_b = v₂t = 3.0(0.612) = 1.836 m", "0.5")
     point(doc, "W_friction = f_k × s_b = 4.905 × 1.836 = 9.006 J (total work by friction on belt surface)", "0.5")
-    note(doc, "Alternative: W_friction_on_package = f_k × s_p = 4.905 × 1.377 = 6.75 J = ΔKE ✓")
+    note(doc, "Alternative: W_friction_on_package = f_k × s_p = 4.905 × 1.377 = 6.75 J = ΔKE ")
     point(doc, "Efficiency = ΔKE / W_total = 6.75 / 9.006 = 74.9% ≈ 75%", "1")
 
     heading(doc, "Q7 (b)  —  Compound Gear Train [10 marks]", 2)
@@ -795,7 +795,7 @@ def answers_set3(doc):
     point(doc, "P_out = P_in × η_total = 418.88 × 0.9216 = 386.08 W; P_loss = 418.88 − 386.08 = 32.80 W", "1")
     marks_note(doc, "Load check [3 marks]:")
     point(doc, "Required: 25 N·m at 125 RPM → P_load = 25 × 13.09 = 327.25 W", "1")
-    point(doc, "Available: τ_out = 29.49 N·m > 25 N·m ✓ and P_out = 386.08 W > 327.25 W ✓", "1")
+    point(doc, "Available: τ_out = 29.49 N·m > 25 N·m and P_out = 386.08 W > 327.25 W ", "1")
     point(doc, "Motor IS sufficient with margin: torque surplus = 4.49 N·m (18%), power surplus = 58.83 W (15.2%)", "1")
     sep(doc)
 
@@ -811,6 +811,6 @@ if __name__ == "__main__":
         writer(doc)
         path = f"Final Papers/DSM_Answers_Set{num}.docx"
         doc.save(path)
-        print(f"  [OK] {path}")
+        print(f"[OK] {path}")
 
     print("\nDone — 3 DSM answer booklets generated.")

@@ -818,11 +818,11 @@ def main():
         ws = wb1.create_sheet(title=tab_labels[i])
         build_evaluator_sheet(ws, ev, use_formula=True)
         sheet_names.append(tab_labels[i])
-        print(f"  + {tab_labels[i]}  (/{ev['total_max']} marks)")
+        print(f"+ {tab_labels[i]}  (/{ev['total_max']} marks)")
 
     ws_sum = wb1.create_sheet(title="7_Marks_Summary")
     build_summary_sheet(ws_sum, sheet_names)
-    print("  + 7_Marks_Summary")
+    print("+ 7_Marks_Summary")
 
     out1 = os.path.join(OUT_DIR, "Evaluation_Rubric_Sheets.xlsx")
     wb1.save(out1)
@@ -835,7 +835,7 @@ def main():
     for i, ev in enumerate(EVALUATORS):
         ws = wb2.create_sheet(title=tab_labels[i])
         build_evaluator_sheet(ws, ev, use_formula=False)
-        print(f"  + {tab_labels[i]}")
+        print(f"+ {tab_labels[i]}")
 
     out2 = os.path.join(OUT_DIR, "Evaluation_Rubric_Sheets_PRINT.xlsx")
     wb2.save(out2)
@@ -844,13 +844,13 @@ def main():
     # ── Summary ───────────────────────────────────────────────────────────────
     total_marks = sum(ev["total_max"] for ev in EVALUATORS)
     print(f"\n  MARKS STRUCTURE:  {len(EVALUATORS)} Judges = {total_marks} Total")
-    print(f"  {'─'*54}")
+    print(f"{'─'*54}")
     for ev in EVALUATORS:
-        print(f"  {ev['name']:<35}  /{ev['total_max']}")
-    print(f"  {'─'*54}")
-    print(f"  {'FINAL MARKS':<35}  /{total_marks}")
+        print(f"{ev['name']:<35}  /{ev['total_max']}")
+    print(f"{'─'*54}")
+    print(f"{'FINAL MARKS':<35}  /{total_marks}")
     print(f"\n  {len(GROUPS)} groups  |  {len(STUDENT_ROW_MAP)} individual student rows")
-    print(f"  C1–C3: GROUP criteria  |  C4: INDIVIDUAL criterion  (see each sheet for exact labels)")
+    print(f"C1–C3: GROUP criteria  |  C4: INDIVIDUAL criterion  (see each sheet for exact labels)")
 
 
 if __name__ == "__main__":

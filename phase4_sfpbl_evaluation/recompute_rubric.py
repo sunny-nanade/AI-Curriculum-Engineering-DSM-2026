@@ -47,7 +47,7 @@ print("=" * 60)
 print(f"Total rows in Excel (all sheets):  {len(rows)}")
 print(f"Students with all scores = 0:      {len(absent)}")
 for r in absent:
-    print(f"  {r['roll']}  total={r['total']}")
+    print(f"{r['roll']}  total={r['total']}")
 print(f"Students with total > 0:           {len(present)}")
 
 all_t  = np.array([r['total'] for r in rows])
@@ -55,11 +55,11 @@ pres_t = np.array([r['total'] for r in present])
 
 print()
 print(f"--- Including absent (N={len(rows)}) ---")
-print(f"  M={all_t.mean():.4f}  SD={all_t.std(ddof=1):.4f}  min={all_t.min()}  max={all_t.max()}")
+print(f"M={all_t.mean():.4f}  SD={all_t.std(ddof=1):.4f}  min={all_t.min()}  max={all_t.max()}")
 
 print()
 print(f"--- Excluding absent / zero-scored (N={len(present)}) ---")
-print(f"  M={pres_t.mean():.4f}  SD={pres_t.std(ddof=1):.4f}  min={pres_t.min()}  max={pres_t.max()}")
+print(f"M={pres_t.mean():.4f}  SD={pres_t.std(ddof=1):.4f}  min={pres_t.min()}  max={pres_t.max()}")
 
 print()
 print("--- Per-Judge Means (N excluding absent) ---")
@@ -72,19 +72,19 @@ for code, name in zip(codes, names):
     mx  = MAX[code]
     m   = arr.mean(); sd = arr.std(ddof=1)
     running_sum += m
-    print(f"  {name:<22} ({code}) /{ mx}: M={m:.4f}  SD={sd:.4f}  pct={m/mx*100:.1f}%")
-print(f"  SUM of judge means = {running_sum:.4f}  (total mean = {pres_t.mean():.4f})")
-print(f"  Difference = {abs(running_sum - pres_t.mean()):.6f}  (should be ~0)")
+    print(f"{name:<22} ({code}) /{ mx}: M={m:.4f}  SD={sd:.4f}  pct={m/mx*100:.1f}%")
+print(f"SUM of judge means = {running_sum:.4f}  (total mean = {pres_t.mean():.4f})")
+print(f"Difference = {abs(running_sum - pres_t.mean()):.6f}  (should be ~0)")
 
 print()
 print("--- MANUSCRIPT vs CORRECT VALUES ---")
-print(f"  Manuscript: N=53  M=79.62  SD=18.43")
-print(f"  Excel:      N={len(present)}  M={pres_t.mean():.2f}  SD={pres_t.std(ddof=1):.2f}")
+print(f"Manuscript: N=53  M=79.62  SD=18.43")
+print(f"Excel:      N={len(present)}  M={pres_t.mean():.2f}  SD={pres_t.std(ddof=1):.2f}")
 if abs(pres_t.mean() - 79.62) > 0.5:
-    print("  >>> MISMATCH: Manuscript exhibition stats are INCORRECT")
-    print(f"  >>> CORRECT: M={pres_t.mean():.2f}  SD={pres_t.std(ddof=1):.2f}  N={len(present)}")
+    print(">>> MISMATCH: Manuscript exhibition stats are INCORRECT")
+    print(f">>> CORRECT: M={pres_t.mean():.2f}  SD={pres_t.std(ddof=1):.2f}  N={len(present)}")
 else:
-    print("  OK: Manuscript value matches Excel within 0.5 points")
+    print("OK: Manuscript value matches Excel within 0.5 points")
 
 print()
 print("--- Per-Judge CORRECT values for Table 6 ---")
@@ -92,5 +92,5 @@ for code, name in zip(codes, names):
     arr = np.array([r[code] for r in present])
     mx  = MAX[code]
     lo  = arr.min(); hi = arr.max()
-    print(f"  {name:<22}  M={arr.mean():.2f}  SD={arr.std(ddof=1):.2f}  Range={lo}-{hi}  /{mx}")
-print(f"  COMBINED TOTAL        M={pres_t.mean():.2f}  SD={pres_t.std(ddof=1):.2f}  Range={pres_t.min()}-{pres_t.max()}  /100")
+    print(f"{name:<22}  M={arr.mean():.2f}  SD={arr.std(ddof=1):.2f}  Range={lo}-{hi}  /{mx}")
+print(f"COMBINED TOTAL        M={pres_t.mean():.2f}  SD={pres_t.std(ddof=1):.2f}  Range={pres_t.min()}-{pres_t.max()}  /100")

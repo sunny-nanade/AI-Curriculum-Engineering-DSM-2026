@@ -25,8 +25,8 @@ try:
     REPORTLAB_AVAILABLE = True
 except ImportError:
     REPORTLAB_AVAILABLE = False
-    print("⚠️  ReportLab not available. Will generate HTML files instead.")
-    print("   Install with: pip install reportlab")
+    print("ReportLab not available. Will generate HTML files instead.")
+    print("Install with: pip install reportlab")
 
 
 class QuestionPaperGenerator:
@@ -53,8 +53,8 @@ class QuestionPaperGenerator:
             else:
                 self.generate_html_set(set_num, output_dir)
         
-        print(f"\n✅ Successfully generated {num_sets} question paper sets!")
-        print(f"📁 Location: {output_dir.absolute()}")
+        print(f"\nSuccessfully generated {num_sets} question paper sets!")
+        print(f"Location: {output_dir.absolute()}")
     
     def generate_pdf_set(self, set_num, output_dir):
         """Generate PDF question paper using ReportLab"""
@@ -873,8 +873,8 @@ def main():
     print(f"Duration: 45 minutes")
     print(f"Total Marks: 10")
     print("\nPattern:")
-    print("  - Q1 (Compulsory): 4 marks")
-    print("  - Solve ANY TWO from Q2/Q3/Q4: 6 marks")
+    print("- Q1 (Compulsory): 4 marks")
+    print("- Solve ANY TWO from Q2/Q3/Q4: 6 marks")
     print("\n" + "=" * 60)
     
     generator = QuestionPaperGenerator()
@@ -882,10 +882,10 @@ def main():
     
     if not REPORTLAB_AVAILABLE:
         print("\n" + "=" * 60)
-        print("📌 NOTE: HTML files generated successfully!")
-        print("   To convert to PDF, you can:")
-        print("   1. Open HTML files in a browser and Print to PDF")
-        print("   2. Or install ReportLab: pip install reportlab")
+        print("NOTE: HTML files generated successfully!")
+        print("To convert to PDF, you can:")
+        print("1. Open HTML files in a browser and Print to PDF")
+        print("2. Or install ReportLab: pip install reportlab")
         print("=" * 60)
 
 

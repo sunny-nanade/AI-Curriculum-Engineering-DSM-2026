@@ -35,12 +35,12 @@ notebook["cells"].append({
     "cell_type": "markdown",
     "metadata": {},
     "source": [
-        "# ⚙️ Unit 5 Lecture 2: Coupled Translation-Rotation Systems\n",
+        "# Unit 5 Lecture 2: Coupled Translation-Rotation Systems\n",
         "## Multi-Body Mechanisms & Kinematic Constraints\n",
         "\n",
         "---\n",
         "\n",
-        "### 🎯 Learning Objectives\n",
+        "### Learning Objectives\n",
         "By the end of this lecture, you will be able to:\n",
         "1. **Analyze coupled systems** where translation and rotation are linked\n",
         "2. **Apply rolling constraints** (v = ωR) to find accelerations\n",
@@ -48,7 +48,7 @@ notebook["cells"].append({
         "4. **Derive kinematic relationships** between connected rigid bodies\n",
         "5. **Solve multi-body problems** using constraint equations\n",
         "\n",
-        "### 📚 Context\n",
+        "### Context\n",
         "**From single body to multi-body:**\n",
         "- Lecture 1: Single rigid body → translation + rotation independently\n",
         "- **This lecture**: Multiple bodies → motion coupled by constraints\n",
@@ -59,7 +59,7 @@ notebook["cells"].append({
         "- Robot arm: joints couple multiple links\n",
         "- Transmission: gears transfer motion with ratio\n",
         "\n",
-        "### 🔑 Key Concepts\n",
+        "### Key Concepts\n",
         "**Constraint equations**: Relate motions of different bodies\n",
         "- Rolling: $v_{cm} = \\omega R$\n",
         "- Linkage: geometry determines velocity ratios\n",
@@ -90,7 +90,7 @@ notebook["cells"].append({
         "plt.style.use('seaborn-v0_8-darkgrid')\n",
         "plt.rcParams['figure.figsize'] = (12, 4)\n",
         "\n",
-        "print(\"✓ Libraries imported successfully!\")\n",
+        "print(\"Libraries imported successfully!\")\n",
         "print(\"  Ready for coupled systems analysis...\")\n"
     ]
 })
@@ -101,7 +101,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part A: The Yo-Yo Problem 🪀\n",
+        "## Part A: The Yo-Yo Problem \n",
         "\n",
         "### Setup\n",
         "**System**: Disk (mass m, radius R, moment of inertia I) with string wound around inner radius r\n",
@@ -291,14 +291,14 @@ notebook["cells"].append({
         "plt.show()\n",
         "\n",
         "# Final values\n",
-        "print(f\"\\n📊 After {t_fall} second:\")\n",
+        "print(f\"\\nAfter {t_fall} second:\")\n",
         "print(f\"  Distance fallen: {y[-1]*100:.2f} cm\")\n",
         "print(f\"  Revolutions: {theta[-1]/(2*np.pi):.2f}\")\n",
         "print(f\"  Final velocity: {v[-1]*100:.2f} cm/s\")\n",
         "print(f\"  Final ω: {omega[-1]:.2f} rad/s = {omega[-1]/(2*np.pi):.2f} rev/s\")\n",
-        "print(f\"\\n✓ Constraint check: v = {v[-1]*100:.4f} cm/s, ωr = {v_check[-1]*100:.4f} cm/s\")\n",
-        "print(f\"✓ Energy check: KE = {KE_total[-1]*1000:.4f} mJ, PE = {PE_lost[-1]*1000:.4f} mJ\")\n",
-        "print(f\"\\n💡 Energy split: {frac_trans[-1]*100:.1f}% translational, {frac_rot[-1]*100:.1f}% rotational\")\n"
+        "print(f\"\\nConstraint check: v = {v[-1]*100:.4f} cm/s, ωr = {v_check[-1]*100:.4f} cm/s\")\n",
+        "print(f\"Energy check: KE = {KE_total[-1]*1000:.4f} mJ, PE = {PE_lost[-1]*1000:.4f} mJ\")\n",
+        "print(f\"\\nEnergy split: {frac_trans[-1]*100:.1f}% translational, {frac_rot[-1]*100:.1f}% rotational\")\n"
     ]
 })
 
@@ -308,7 +308,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part B: Slider-Crank Mechanism ⚙️\n",
+        "## Part B: Slider-Crank Mechanism \n",
         "\n",
         "### What is a Slider-Crank?\n",
         "**Definition**: Converts rotary motion ↔ linear motion\n",
@@ -502,7 +502,7 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(\"\\n💡 Key observations:\")\n",
+        "print(\"\\nKey observations:\")\n",
         "print(\"  1. Position: sinusoidal-like, but not perfect sine (due to rod length)\")\n",
         "print(\"  2. Velocity: NOT symmetric! Faster on one side\")\n",
         "print(\"  3. Acceleration: Peaks at dead centers (TDC, BDC)\")\n",
@@ -516,7 +516,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part C: Gear Trains ⚙️⚙️\n",
+        "## Part C: Gear Trains \n",
         "\n",
         "### Basics\n",
         "**Purpose**: Transfer rotation with speed/torque ratio\n",
@@ -617,7 +617,7 @@ notebook["cells"].append({
         "print(f\"\\nOutput Shaft:\")\n",
         "print(f\"  Speed: {omega_output:.2f} rad/s = {omega_output/(2*np.pi)*60:.1f} RPM\")\n",
         "print(f\"  Torque: {tau_output:.3f} N·m (×{tau_output/tau_motor:.1f} amplification!)\")\n",
-        "print(f\"  Power: {P_output:.3f} W (conservation ✓)\")\n",
+        "print(f\"  Power: {P_output:.3f} W (conservation )\")\n",
         "\n",
         "# Simulate rotation over time\n",
         "t = np.linspace(0, 2, 500)  # 2 seconds\n",
@@ -713,7 +713,7 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(\"\\n💡 Trade-off: Speed ↓ → Torque ↑ (Power conserved)\")\n",
+        "print(\"\\nTrade-off: Speed ↓ → Torque ↑ (Power conserved)\")\n",
         "print(f\"   This reduction gives {tau_output/tau_motor:.1f}× more torque at output!\")\n"
     ]
 })
@@ -724,7 +724,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## 📝 Summary\n",
+        "## Summary\n",
         "\n",
         "### Key Concepts\n",
         "\n",
@@ -781,7 +781,7 @@ notebook["cells"].append({
         "\n",
         "---\n",
         "\n",
-        "### 🧪 Practice Problems\n",
+        "### Practice Problems\n",
         "\n",
         "1. **Modified yo-yo**: Inner radius r = R/2, what's the acceleration?\n",
         "2. **Slider-crank**: If L = 3r, find max velocity and compare to rω\n",
@@ -798,16 +798,16 @@ with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(notebook, f, indent=1, ensure_ascii=False)
 
 print("=" * 60)
-print("✓ Unit 5 Lecture 2 Created Successfully!")
+print("Unit 5 Lecture 2 Created Successfully!")
 print("=" * 60)
 print(f"\nFile: {output_path}")
 print(f"\nNotebook structure:")
-print(f"  Total cells: {len(notebook['cells'])}")
-print(f"  Markdown: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'markdown')}")
-print(f"  Code: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'code')}")
+print(f"Total cells: {len(notebook['cells'])}")
+print(f"Markdown: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'markdown')}")
+print(f"Code: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'code')}")
 print(f"\nContent:")
-print(f"  Part A: Yo-Yo Dynamics (coupled translation-rotation)")
-print(f"  Part B: Slider-Crank Mechanism (engine kinematics)")
-print(f"  Part C: Gear Trains (speed/torque ratios)")
+print(f"Part A: Yo-Yo Dynamics (coupled translation-rotation)")
+print(f"Part B: Slider-Crank Mechanism (engine kinematics)")
+print(f"Part C: Gear Trains (speed/torque ratios)")
 print(f"\nDuration: ~90 minutes")
 print(f"\nReady to test!")

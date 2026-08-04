@@ -185,8 +185,8 @@ def create_qp_template_format1():
     
     # Save
     doc.save("QP_TEMPLATE_FORMAT1_Individual_Tables.docx")
-    print("✓ Format 1 saved: QP_TEMPLATE_FORMAT1_Individual_Tables.docx")
-    print("  (Individual table after each question)")
+    print("Format 1 saved: QP_TEMPLATE_FORMAT1_Individual_Tables.docx")
+    print("(Individual table after each question)")
 
 
 def create_qp_template_format2():
@@ -333,8 +333,8 @@ def create_qp_template_format2():
     
     # Save
     doc.save("QP_TEMPLATE_FORMAT2_Combined_Table.docx")
-    print("✓ Format 2 saved: QP_TEMPLATE_FORMAT2_Combined_Table.docx")
-    print("  (Combined mapping table at the end with summary)")
+    print("Format 2 saved: QP_TEMPLATE_FORMAT2_Combined_Table.docx")
+    print("(Combined mapping table at the end with summary)")
 
 
 if __name__ == "__main__":
@@ -353,12 +353,12 @@ if __name__ == "__main__":
     print("=" * 80)
     print()
     print("FORMAT 1: Individual table after each question")
-    print("  - Good for: Immediate reference while reading")
-    print("  - Takes more space")
+    print("- Good for: Immediate reference while reading")
+    print("- Takes more space")
     print()
     print("FORMAT 2: Combined table at the end")
-    print("  - Good for: Clean question paper, systematic review")
-    print("  - Includes distribution summary")
-    print("  - Recommended for software import")
+    print("- Good for: Clean question paper, systematic review")
+    print("- Includes distribution summary")
+    print("- Recommended for software import")
     print()
     print("Please review both formats and let us know which one you prefer!")

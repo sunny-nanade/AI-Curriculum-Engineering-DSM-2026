@@ -158,23 +158,23 @@ class QuestionPaper:
         # Validation
         validations = self.validate_structure()
         if validations:
-            print("\n⚠ VALIDATION ISSUES:")
+            print("\nVALIDATION ISSUES:")
             for v in validations:
-                print(f"  - {v}")
+                print(f"- {v}")
         else:
-            print("\n✓ Structure validated successfully")
+            print("\nStructure validated successfully")
             
         # CO Distribution
         print("\nCourse Outcome Distribution:")
         co_dist = self.get_co_distribution()
         for co, count in sorted(co_dist.items()):
-            print(f"  {co}: {count} question(s)")
+            print(f"{co}: {count} question(s)")
             
         # Unit Distribution
         print("\nUnit Distribution:")
         unit_dist = self.get_unit_distribution()
         for unit, count in sorted(unit_dist.items()):
-            print(f"  Unit {unit}: {count} question(s)")
+            print(f"Unit {unit}: {count} question(s)")
             
         print("=" * 80)
 

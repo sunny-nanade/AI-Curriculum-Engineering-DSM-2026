@@ -121,10 +121,10 @@ India adopted NBA accreditation (signatory to Washington Accord, 2014). DSM maps
 ```
 
 **Why NOT separate Jupyter server?**
-- ✅ Students learn Git workflow (essential for engineering)
-- ✅ One-time installation (less tech support)
-- ✅ Version history, branching, collaboration built-in
-- ✅ Institutional license allows unlimited private repos
+- Students learn Git workflow (essential for engineering)
+- One-time installation (less tech support)
+- Version history, branching, collaboration built-in
+- Institutional license allows unlimited private repos
 
 ### 3.2 GitHub Classroom Structure
 
@@ -208,19 +208,19 @@ GitHub Organization: YourUniversity/DSM-Sem4-Mechatronics
 
 ### Hour 1: [Subtopic]
 
-#### 📖 Explain (5 min)
+#### Explain (5 min)
 [Theory + intuition + visual or animation]
 - Key equation: ... (with derivation or reference)
 - Physical meaning: ...
 - Real-world example: ...
 
-#### 🔧 Try (10 min)
+#### Try (10 min)
 [Guided, fill-in-the-blank code cells]
 - Students complete missing parts (marked as TODO)
 - Expected output shown
 - Reflection prompt: "What changes if you modify X?"
 
-#### 🚀 Challenge (10 min)
+#### Challenge (10 min)
 [Open-ended, creative problem]
 - Rubric provided inline
 - Bonus extension (optional, +2%)
@@ -256,7 +256,7 @@ GitHub Organization: YourUniversity/DSM-Sem4-Mechatronics
 
 ### 5.2 Engagement & Motivation
 
-- **Weekly Wins:** Each hour-mark gets a ✅ emoji in README (visible progress)
+- **Weekly Wins:** Each hour-mark gets a emoji in README (visible progress)
 - **Leaderboard (opt-in):** Fastest-running code, best visualization, peer review count
 - **Bonus Labs:** +2% each for optional challenges (system ID from real data, Bode optimization, etc.)
 - **Peer Review:** +1% per thoughtful review comment (GitHub Issues/PRs)
@@ -310,14 +310,14 @@ GitHub Organization: YourUniversity/DSM-Sem4-Mechatronics
 
 ### 7.2 Common Misconceptions Avoided
 
-❌ **"Just give students code and they'll learn"**
-→ ✅ Notebooks are **scaffolded**, not full solutions; Try/Challenge sections require active engagement
+**"Just give students code and they'll learn"**
+→ Notebooks are **scaffolded**, not full solutions; Try/Challenge sections require active engagement
 
-❌ **"More theory makes stronger engineers"**
-→ ✅ Theory + immediate practice with visualization = deeper learning
+**"More theory makes stronger engineers"**
+→ Theory + immediate practice with visualization = deeper learning
 
-❌ **"Grading only at end of course"**
-→ ✅ Formative feedback throughout (quick checks, peer review); summative at milestones
+**"Grading only at end of course"**
+→ Formative feedback throughout (quick checks, peer review); summative at milestones
 
 ---
 
@@ -419,11 +419,11 @@ GitHub Organization: YourUniversity/DSM-Sem4-Mechatronics
 ## CONCLUSION
 
 This framework integrates:
-- ✅ **Evidence-based pedagogy** (constructivism, scaffolding, active learning, Bloom's taxonomy)
-- ✅ **OBE methodology** (outcomes-driven, backward-designed, transparent assessment)
-- ✅ **Modern engineering tools** (VS Code, GitHub, Python, Jupyter native)
-- ✅ **Inclusive, low-barrier access** (single installation, free tools, academic license)
-- ✅ **NBA/ABET alignment** (explicit mapping to program outcomes)
+- **Evidence-based pedagogy** (constructivism, scaffolding, active learning, Bloom's taxonomy)
+- **OBE methodology** (outcomes-driven, backward-designed, transparent assessment)
+- **Modern engineering tools** (VS Code, GitHub, Python, Jupyter native)
+- **Inclusive, low-barrier access** (single installation, free tools, academic license)
+- **NBA/ABET alignment** (explicit mapping to program outcomes)
 
 The result: **A coherent, engaging, rigorous course that students WANT to take and LEARN deeply from.**
 

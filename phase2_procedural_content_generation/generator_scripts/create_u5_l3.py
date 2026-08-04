@@ -35,12 +35,12 @@ notebook["cells"].append({
     "cell_type": "markdown",
     "metadata": {},
     "source": [
-        "# ⚙️ Unit 5 Lecture 3: Multi-DOF Rigid Body Systems\n",
+        "# Unit 5 Lecture 3: Multi-DOF Rigid Body Systems\n",
         "## Coupled Dynamics & Double Pendulum\n",
         "\n",
         "---\n",
         "\n",
-        "### 🎯 Learning Objectives\n",
+        "### Learning Objectives\n",
         "By the end of this lecture, you will be able to:\n",
         "1. **Formulate equations** for systems with multiple degrees of freedom (DOF)\n",
         "2. **Derive coupled equations** using Lagrange or Newton-Euler methods\n",
@@ -48,7 +48,7 @@ notebook["cells"].append({
         "4. **Analyze double pendulum** - classic chaotic system\n",
         "5. **Simulate coupled dynamics** numerically and interpret results\n",
         "\n",
-        "### 📚 Context\n",
+        "### Context\n",
         "**From single DOF to multi-DOF:**\n",
         "- Lecture 1: Single rigid body → 1 DOF (pendulum, rolling wheel)\n",
         "- Lecture 2: Coupled translation-rotation → constraints reduce DOF\n",
@@ -60,7 +60,7 @@ notebook["cells"].append({
         "- Complexity: Can exhibit chaos (double pendulum!)\n",
         "- Foundation: Bridge to vibrations (Unit 5.2)\n",
         "\n",
-        "### 🔑 Key Concepts\n",
+        "### Key Concepts\n",
         "**Degrees of Freedom (DOF)**: Number of independent coordinates needed\n",
         "- 2 masses on springs: 2 DOF (x₁, x₂)\n",
         "- Double pendulum: 2 DOF (θ₁, θ₂)\n",
@@ -96,7 +96,7 @@ notebook["cells"].append({
         "plt.style.use('seaborn-v0_8-darkgrid')\n",
         "plt.rcParams['figure.figsize'] = (12, 4)\n",
         "\n",
-        "print(\"✓ Libraries imported successfully!\")\n",
+        "print(\"Libraries imported successfully!\")\n",
         "print(\"  Ready for multi-DOF analysis...\")\n"
     ]
 })
@@ -107,7 +107,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part A: Two Masses Connected by Springs 🔗\n",
+        "## Part A: Two Masses Connected by Springs \n",
         "\n",
         "### Setup\n",
         "**System**: Two masses (m₁, m₂) connected by springs (k₁, k₂, k₃)\n",
@@ -212,12 +212,12 @@ notebook["cells"].append({
         "omega_n = omega_n[idx]\n",
         "mode_shapes = mode_shapes[:, idx]\n",
         "\n",
-        "print(f\"\\n🎵 Natural Frequencies:\")\n",
+        "print(f\"\\nNatural Frequencies:\")\n",
         "print(f\"  ω₁ = {omega_n[0]:.3f} rad/s = {omega_n[0]/(2*np.pi):.3f} Hz (Mode 1)\")\n",
         "print(f\"  ω₂ = {omega_n[1]:.3f} rad/s = {omega_n[1]/(2*np.pi):.3f} Hz (Mode 2)\")\n",
         "print(f\"  Ratio ω₂/ω₁ = {omega_n[1]/omega_n[0]:.3f}\")\n",
         "\n",
-        "print(f\"\\n📐 Mode Shapes (normalized):\")\n",
+        "print(f\"\\nMode Shapes (normalized):\")\n",
         "# Normalize so first element is 1\n",
         "mode1 = mode_shapes[:, 0] / mode_shapes[0, 0]\n",
         "mode2 = mode_shapes[:, 1] / mode_shapes[0, 1]\n",
@@ -328,8 +328,8 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(f\"\\n✓ Energy conservation: {E_total[0]:.6f} → {E_total[-1]:.6f} J\")\n",
-        "print(f\"\\n💡 Key observations:\")\n",
+        "print(f\"\\nEnergy conservation: {E_total[0]:.6f} → {E_total[-1]:.6f} J\")\n",
+        "print(f\"\\nKey observations:\")\n",
         "print(f\"  1. Mode 1: Both masses oscillate together (lower frequency)\")\n",
         "print(f\"  2. Mode 2: Masses oscillate oppositely (higher frequency)\")\n",
         "print(f\"  3. Actual motion: Combination of both modes!\")\n"
@@ -342,7 +342,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## Part B: Double Pendulum 🎢\n",
+        "## Part B: Double Pendulum \n",
         "\n",
         "### Setup\n",
         "**System**: Two pendulums connected end-to-end\n",
@@ -477,7 +477,7 @@ notebook["cells"].append({
         "PE = m1 * g * y1 + m2 * g * y2\n",
         "E_total = KE + PE\n",
         "\n",
-        "print(\"✓ Simulation complete!\")\n",
+        "print(\"Simulation complete!\")\n",
         "\n",
         "# Plotting\n",
         "fig = plt.figure(figsize=(16, 12))\n",
@@ -554,13 +554,13 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(f\"\\n📊 Statistics:\")\n",
+        "print(f\"\\nStatistics:\")\n",
         "print(f\"  Energy conservation: {E_total[0]:.6f} → {E_total[-1]:.6f} J\")\n",
         "print(f\"  Error: {abs(E_total[-1] - E_total[0])/E_total[0]*100:.4f}%\")\n",
         "print(f\"  Max ω₁: {np.max(np.abs(omega1)):.2f} rad/s\")\n",
         "print(f\"  Max ω₂: {np.max(np.abs(omega2)):.2f} rad/s\")\n",
         "\n",
-        "print(f\"\\n💡 Chaos characteristics:\")\n",
+        "print(f\"\\nChaos characteristics:\")\n",
         "print(f\"  1. Trajectory: Complex, never repeats exactly\")\n",
         "print(f\"  2. Phase portraits: Fill space (not simple loops)\")\n",
         "print(f\"  3. Energy exchanges wildly between pendulums\")\n",
@@ -616,7 +616,7 @@ notebook["cells"].append({
         "x2_B = L1 * np.sin(theta1_B) + L2 * np.sin(theta2_B)\n",
         "y2_B = -L1 * np.cos(theta1_B) - L2 * np.cos(theta2_B)\n",
         "\n",
-        "print(\"✓ Simulations complete!\")\n",
+        "print(\"Simulations complete!\")\n",
         "\n",
         "# Plotting\n",
         "fig, axes = plt.subplots(2, 2, figsize=(14, 10))\n",
@@ -674,7 +674,7 @@ notebook["cells"].append({
         "idx_10deg = np.where(diff_theta1 > 10.0)[0]\n",
         "idx_90deg = np.where(diff_theta1 > 90.0)[0]\n",
         "\n",
-        "print(f\"\\n⏱️ Time to divergence:\")\n",
+        "print(f\"\\n⏱Time to divergence:\")\n",
         "if len(idx_1deg) > 0:\n",
         "    print(f\"  1° difference: {t_chaos[idx_1deg[0]]:.2f} s\")\n",
         "if len(idx_10deg) > 0:\n",
@@ -682,10 +682,10 @@ notebook["cells"].append({
         "if len(idx_90deg) > 0:\n",
         "    print(f\"  90° difference: {t_chaos[idx_90deg[0]]:.2f} s\")\n",
         "\n",
-        "print(f\"\\n🦋 Butterfly Effect Demonstrated!\")\n",
+        "print(f\"\\nButterfly Effect Demonstrated!\")\n",
         "print(f\"  Initial: 0.01° apart\")\n",
         "print(f\"  After {t_chaos[-1]:.0f}s: Completely uncorrelated!\")\n",
-        "print(f\"\\n💡 This is deterministic chaos:\")\n",
+        "print(f\"\\nThis is deterministic chaos:\")\n",
         "print(f\"  - Equations are known (no randomness)\")\n",
         "print(f\"  - But long-term prediction impossible\")\n",
         "print(f\"  - Tiny errors grow exponentially\")\n"
@@ -698,7 +698,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## 📝 Summary\n",
+        "## Summary\n",
         "\n",
         "### Key Concepts\n",
         "\n",
@@ -771,7 +771,7 @@ notebook["cells"].append({
         "\n",
         "---\n",
         "\n",
-        "### 🧪 Practice Problems\n",
+        "### Practice Problems\n",
         "\n",
         "1. **Three masses**: Add third mass to spring system, find 3 natural frequencies\n",
         "2. **Double pendulum**: Small angles → linearize equations, find normal modes\n",
@@ -788,16 +788,16 @@ with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(notebook, f, indent=1, ensure_ascii=False)
 
 print("=" * 60)
-print("✓ Unit 5 Lecture 3 Created Successfully!")
+print("Unit 5 Lecture 3 Created Successfully!")
 print("=" * 60)
 print(f"\nFile: {output_path}")
 print(f"\nNotebook structure:")
-print(f"  Total cells: {len(notebook['cells'])}")
-print(f"  Markdown: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'markdown')}")
-print(f"  Code: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'code')}")
+print(f"Total cells: {len(notebook['cells'])}")
+print(f"Markdown: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'markdown')}")
+print(f"Code: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'code')}")
 print(f"\nContent:")
-print(f"  Part A: Two-Mass-Spring System (normal modes)")
-print(f"  Part B: Double Pendulum (nonlinear, chaotic)")
-print(f"  Example 3: Chaos demonstration (butterfly effect)")
+print(f"Part A: Two-Mass-Spring System (normal modes)")
+print(f"Part B: Double Pendulum (nonlinear, chaotic)")
+print(f"Example 3: Chaos demonstration (butterfly effect)")
 print(f"\nDuration: ~90 minutes")
 print(f"\nReady to test!")

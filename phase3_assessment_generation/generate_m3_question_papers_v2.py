@@ -279,7 +279,7 @@ Q1B_BANKS = {
             "Parallel axis theorem: I_pivot = I_cm + m(L/2)²\n"
             "= 0.36 + 3 × (0.6)² = 0.36 + 3 × 0.36 = 0.36 + 1.08\n"
             "= 1.44 kg·m².\n"
-            "(Check: I_pivot = (1/3)mL² = (1/3) × 3 × 1.44 = 1.44 kg·m² ✓)",
+            "(Check: I_pivot = (1/3)mL² = (1/3) × 3 × 1.44 = 1.44 kg·m² )",
         ],
     },
 }
@@ -610,7 +610,7 @@ def solve_q4(set_num):
             f"= {I_cm:.4f} + {m_val} × {d}² = {I_cm:.4f} + {m_val * d**2:.4f}\n"
             f"= {I_piv:.4f} kg·m²\n"
             f"(Check: I_pivot = (1/3)mL² = (1/3) × {m_val} × {L_val**2:.2f} "
-            f"= {m_val * L_val**2 / 3:.4f} kg·m² ✓)",
+            f"= {m_val * L_val**2 / 3:.4f} kg·m² )",
 
             f"d = L/2 = {L_val}/2 = {d} m\n"
             f"(The center of mass of a uniform rod is at its midpoint.)",
@@ -1252,10 +1252,10 @@ def main():
     print("=" * 65)
     print("DYNAMIC SYSTEMS MODELING — M3 RE-EXAM QUESTION PAPER GENERATOR")
     print("=" * 65)
-    print(f"  Exam     : {EXAM_TITLE}")
-    print(f"  Scope    : Unit 1 – Unit 5 (complete)")
-    print(f"  Sets     : {NUM_SETS}")
-    print(f"  Format   : Word (.docx) + Per-set QP PDF + Per-set Solutions PDF")
+    print(f"Exam     : {EXAM_TITLE}")
+    print(f"Scope    : Unit 1 – Unit 5 (complete)")
+    print(f"Sets     : {NUM_SETS}")
+    print(f"Format   : Word (.docx) + Per-set QP PDF + Per-set Solutions PDF")
     print()
 
     qp_paths = []
@@ -1265,12 +1265,12 @@ def main():
         qp_path = os.path.join(OUTPUT_DIR, f"DSM_M3_Re_Exam_Set_{s:02d}.docx")
         qp_doc.save(qp_path)
         qp_paths.append(qp_path)
-        print(f"  ✓ QP Set {s}:        {os.path.basename(qp_path)}")
+        print(f"QP Set {s}:        {os.path.basename(qp_path)}")
 
         sol_doc = _build_solutions_docx(s)
         sol_path = os.path.join(OUTPUT_DIR, f"DSM_M3_Re_Exam_Solutions_Set_{s:02d}.docx")
         sol_doc.save(sol_path)
-        print(f"  ✓ Solutions Set {s}: {os.path.basename(sol_path)}")
+        print(f"Solutions Set {s}: {os.path.basename(sol_path)}")
 
     print()
 
@@ -1286,20 +1286,20 @@ def main():
         build_qp_pdf(qp_paths[s - 1], qp_pdf)
         if has_pypdf:
             pages = len(PdfReader(qp_pdf).pages)
-            print(f"  ✓ QP PDF Set {s}:       {os.path.basename(qp_pdf)} ({pages} pages)")
+            print(f"QP PDF Set {s}:       {os.path.basename(qp_pdf)} ({pages} pages)")
         else:
-            print(f"  ✓ QP PDF Set {s}:       {os.path.basename(qp_pdf)}")
+            print(f"QP PDF Set {s}:       {os.path.basename(qp_pdf)}")
 
         sol_pdf = os.path.join(OUTPUT_DIR, f"DSM_M3_Re_Exam_Solutions_Set_{s:02d}.pdf")
         build_sol_pdf(s, sol_pdf)
         if has_pypdf:
             pages = len(PdfReader(sol_pdf).pages)
-            print(f"  ✓ Sol PDF Set {s}:       {os.path.basename(sol_pdf)} ({pages} pages)")
+            print(f"Sol PDF Set {s}:       {os.path.basename(sol_pdf)} ({pages} pages)")
         else:
-            print(f"  ✓ Sol PDF Set {s}:       {os.path.basename(sol_pdf)}")
+            print(f"Sol PDF Set {s}:       {os.path.basename(sol_pdf)}")
 
     print()
-    print(f"  Output dir: {OUTPUT_DIR}")
+    print(f"Output dir: {OUTPUT_DIR}")
     print("=" * 65)
 
 

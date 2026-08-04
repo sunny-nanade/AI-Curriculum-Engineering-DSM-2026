@@ -429,7 +429,7 @@ def solve_q2(set_num):
 
         f"From equation for m₂: T = m₂(g + a) = {m2} × (9.81 + {a:.3f})\n"
         f"T = {m2} × {g + a:.3f} = {T:.2f} N\n"
-        f"Check via m₁: T = m₁(g − a) = {m1} × {g - a:.3f} = {m1*(g-a):.2f} N ✓",
+        f"Check via m₁: T = m₁(g − a) = {m1} × {g - a:.3f} = {m1*(g-a):.2f} N ",
 
         f"v = u + at = 0 + {a:.3f} × {t} = {v:.3f} m/s",
 
@@ -1256,31 +1256,31 @@ def main():
     print("=" * 65)
     print("DYNAMIC SYSTEMS MODELING — M2 QUESTION PAPER GENERATOR (v2)")
     print("=" * 65)
-    print(f"  Exam   : {EXAM_TITLE}")
-    print(f"  Date   : {EXAM_DATE}")
-    print(f"  Sets   : 4")
-    print(f"  Format : Word (.docx) — SVKM'S NMIMS template")
+    print(f"Exam   : {EXAM_TITLE}")
+    print(f"Date   : {EXAM_DATE}")
+    print(f"Sets   : 4")
+    print(f"Format : Word (.docx) — SVKM'S NMIMS template")
     print()
 
     # Generate QPs (new template format)
-    print("  Question Papers (template format):")
+    print("Question Papers (template format):")
     for s in range(1, 5):
         doc = build_docx(s, include_solutions=False)
         fname = f"DSM_M2_Set_{s:02d}.docx"
         doc.save(os.path.join(OUTPUT_DIR, fname))
-        print(f"    ✓ {fname}")
+        print(f"{fname}")
 
     # Generate Solutions (paragraph format)
     print()
-    print("  Model Answers:")
+    print("Model Answers:")
     for s in range(1, 5):
         doc = build_docx(s, include_solutions=True)
         fname = f"DSM_M2_Solutions_Set_{s:02d}.docx"
         doc.save(os.path.join(OUTPUT_DIR, fname))
-        print(f"    ✓ {fname}")
+        print(f"{fname}")
 
     print()
-    print(f"  All files saved to: {OUTPUT_DIR}")
+    print(f"All files saved to: {OUTPUT_DIR}")
     print("=" * 65)
 
 

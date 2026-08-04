@@ -643,6 +643,6 @@ if __name__ == "__main__":
         add_synoptic_table(doc, rows)
         path = os.path.join(out, f"DSM_ReExam_QP_SetR{num}.docx")
         doc.save(path)
-        print(f"  [OK] {path}")
+        print(f"[OK] {path}")
 
     print("\nDone — 2 DSM Re-Exam question papers generated.")

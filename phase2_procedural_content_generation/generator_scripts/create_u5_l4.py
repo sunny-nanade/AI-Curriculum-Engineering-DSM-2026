@@ -94,7 +94,7 @@ notebook["cells"].append({
         "plt.rcParams['figure.figsize'] = (14, 8)\n",
         "plt.rcParams['font.size'] = 10\n",
         "\n",
-        "print(\"✓ Libraries imported successfully!\")\n",
+        "print(\"Libraries imported successfully!\")\n",
         "print(\"  Ready for vibration analysis...\")\n"
     ]
 })
@@ -271,8 +271,8 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(f\"\\n✓ Analysis complete!\")\n",
-        "print(f\"\\n💡 Key observations:\")\n",
+        "print(f\"\\nAnalysis complete!\")\n",
+        "print(f\"\\nKey observations:\")\n",
         "print(f\"  1. Oscillates forever (no energy loss)\")\n",
         "print(f\"  2. Period Tₙ = {T_n:.3f}s is constant\")\n",
         "print(f\"  3. Energy conserved: E = {E_total[0]:.6f} J\")\n",
@@ -457,7 +457,7 @@ notebook["cells"].append({
         "T_d = 2 * np.pi / omega_d\n",
         "log_dec = 2 * np.pi * zeta_under / np.sqrt(1 - zeta_under**2)\n",
         "\n",
-        "print(f\"\\n📊 Underdamped System (ζ = {zeta_under}):\")\n",
+        "print(f\"\\nUnderdamped System (ζ = {zeta_under}):\")\n",
         "print(f\"  Damped frequency: ωd = {omega_d:.3f} rad/s\")\n",
         "print(f\"  Damped period: Td = {T_d:.3f} s\")\n",
         "print(f\"  Logarithmic decrement: δ = {log_dec:.4f}\")\n",
@@ -471,7 +471,7 @@ notebook["cells"].append({
         "    measured_delta = np.log(x_under[peaks[0]] / x_under[peaks[1]])\n",
         "    print(f\"  Measured δ from peaks: {measured_delta:.4f} (should match theory!)\")\n",
         "\n",
-        "print(f\"\\n💡 Key observations:\")\n",
+        "print(f\"\\nKey observations:\")\n",
         "print(f\"  1. Underdamped: Oscillates + decays (spiral inward)\")\n",
         "print(f\"  2. Critical: Fastest return, no overshoot\")\n",
         "print(f\"  3. Overdamped: Slow, no oscillation\")\n",
@@ -492,7 +492,7 @@ notebook["cells"].append({
         "print(\"Example 3: Extract Modal Parameters from Measurement\")\n",
         "print(\"=\" * 60)\n",
         "\n",
-        "print(\"\\n🎯 Scenario: Unknown system, we measured free response\")\n",
+        "print(\"\\nScenario: Unknown system, we measured free response\")\n",
         "print(\"   Goal: Find ωₙ and ζ from time-series data\")\n",
         "\n",
         "# \"Unknown\" system (we'll pretend we measured this)\n",
@@ -503,7 +503,7 @@ notebook["cells"].append({
         "\n",
         "omega_n_actual = np.sqrt(k_actual / m_actual)\n",
         "\n",
-        "print(f\"\\n📝 (Hidden) Actual System:\")\n",
+        "print(f\"\\n(Hidden) Actual System:\")\n",
         "print(f\"   m = {m_actual} kg, k = {k_actual} N/m\")\n",
         "print(f\"   ζ_actual = {zeta_actual}\")\n",
         "print(f\"   ωₙ_actual = {omega_n_actual:.3f} rad/s\")\n",
@@ -520,7 +520,7 @@ notebook["cells"].append({
         "noise = 0.001 * np.random.randn(len(x_meas))  # 1mm noise\n",
         "x_meas_noisy = x_meas + noise\n",
         "\n",
-        "print(f\"\\n🔬 We measured vibration for {t_meas[-1]} seconds\")\n",
+        "print(f\"\\nWe measured vibration for {t_meas[-1]} seconds\")\n",
         "print(f\"   Initial displacement: {x0_meas*100:.1f} cm\")\n",
         "print(f\"   Measurement noise: ~1 mm RMS\")\n",
         "\n",
@@ -536,7 +536,7 @@ notebook["cells"].append({
         "    T_d_measured = np.mean(periods)\n",
         "    omega_d_measured = 2 * np.pi / T_d_measured\n",
         "    \n",
-        "    print(f\"\\n📏 Step 1: Measure damped frequency\")\n",
+        "    print(f\"\\nStep 1: Measure damped frequency\")\n",
         "    print(f\"   Found {len(peaks)} peaks\")\n",
         "    print(f\"   Average period: Td = {T_d_measured:.4f} s\")\n",
         "    print(f\"   Damped frequency: ωd = {omega_d_measured:.3f} rad/s\")\n",
@@ -554,7 +554,7 @@ notebook["cells"].append({
         "    # Extract damping ratio from log dec\n",
         "    zeta_measured = delta_measured / np.sqrt(4*np.pi**2 + delta_measured**2)\n",
         "    \n",
-        "    print(f\"\\n📏 Step 2: Measure logarithmic decrement\")\n",
+        "    print(f\"\\nStep 2: Measure logarithmic decrement\")\n",
         "    print(f\"   Average δ = {delta_measured:.4f}\")\n",
         "    print(f\"   Extracted ζ = {zeta_measured:.4f}\")\n",
         "\n",
@@ -562,7 +562,7 @@ notebook["cells"].append({
         "omega_n_measured = omega_d_measured / np.sqrt(1 - zeta_measured**2)\n",
         "f_n_measured = omega_n_measured / (2 * np.pi)\n",
         "\n",
-        "print(f\"\\n📏 Step 3: Calculate undamped natural frequency\")\n",
+        "print(f\"\\nStep 3: Calculate undamped natural frequency\")\n",
         "print(f\"   ωₙ = ωd / √(1-ζ²) = {omega_n_measured:.3f} rad/s\")\n",
         "print(f\"   fₙ = {f_n_measured:.3f} Hz\")\n",
         "\n",
@@ -613,13 +613,13 @@ notebook["cells"].append({
         "plt.tight_layout()\n",
         "plt.show()\n",
         "\n",
-        "print(f\"\\n✅ Verification:\")\n",
+        "print(f\"\\nVerification:\")\n",
         "print(f\"   Parameter      Actual      Measured    Error\")\n",
         "print(f\"   ωₙ (rad/s)     {omega_n_actual:.3f}       {omega_n_measured:.3f}       {errors[0]:.2f}%\")\n",
         "print(f\"   ζ              {zeta_actual:.4f}      {zeta_measured:.4f}      {errors[1]:.2f}%\")\n",
         "print(f\"   fₙ (Hz)        {actual_vals[2]:.3f}       {measured_vals[2]:.3f}       {errors[2]:.2f}%\")\n",
         "\n",
-        "print(f\"\\n💡 This is how modal testing works in practice!\")\n",
+        "print(f\"\\nThis is how modal testing works in practice!\")\n",
         "print(f\"   1. Impact structure (hammer test)\")\n",
         "print(f\"   2. Measure free response (accelerometer)\")\n",
         "print(f\"   3. Extract ωₙ and ζ from decay\")\n",
@@ -633,7 +633,7 @@ notebook["cells"].append({
     "metadata": {},
     "source": [
         "---\n",
-        "## 📝 Summary\n",
+        "## Summary\n",
         "\n",
         "### Key Equations\n",
         "\n",
@@ -707,7 +707,7 @@ notebook["cells"].append({
         "\n",
         "---\n",
         "\n",
-        "### 🧪 Practice Problems\n",
+        "### Practice Problems\n",
         "\n",
         "1. **Design problem**: Cantilever beam, L=1m, E=70GPa, I=10⁻⁶m⁴, tip mass m=0.5kg. Find $\\omega_n$.\n",
         "2. **Decay analysis**: System oscillates 10 times before amplitude drops to 10%. Find $\\zeta$.\n",
@@ -724,16 +724,16 @@ with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(notebook, f, indent=1, ensure_ascii=False)
 
 print("=" * 60)
-print("✓ Unit 5 Lecture 4 Created Successfully!")
+print("Unit 5 Lecture 4 Created Successfully!")
 print("=" * 60)
 print(f"\nFile: {output_path}")
 print(f"\nNotebook structure:")
-print(f"  Total cells: {len(notebook['cells'])}")
-print(f"  Markdown: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'markdown')}")
-print(f"  Code: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'code')}")
+print(f"Total cells: {len(notebook['cells'])}")
+print(f"Markdown: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'markdown')}")
+print(f"Code: {sum(1 for c in notebook['cells'] if c['cell_type'] == 'code')}")
 print(f"\nContent:")
-print(f"  Part A: Undamped free vibrations (ωₙ = √(k/m))")
-print(f"  Part B: Damped vibrations (three regimes)")
-print(f"  Example 3: Modal parameter extraction (experimental)")
+print(f"Part A: Undamped free vibrations (ωₙ = √(k/m))")
+print(f"Part B: Damped vibrations (three regimes)")
+print(f"Example 3: Modal parameter extraction (experimental)")
 print(f"\nDuration: ~90 minutes")
 print(f"\nReady to test!")

@@ -108,8 +108,8 @@ def answers_set_r1(doc):
     point(doc, "KE_trans = ½mv² = ½(8)(16) = 64 J", "1")
     point(doc, "I = ½(8)(0.0625) = 0.25 kg·m²; KE_rot = ½Iω² = ½(0.25)(256) = 32 J", "1.5")
     point(doc, "KE_total = 64 + 32 = 96 J", "1")
-    note(doc, "For a rolling cylinder: KE_rot/KE_total = 1/3 ≈ 33.3%. Check: 32/96 = 0.333 ✓")
-    point(doc, "Alternatively: KE = ½mv²(1 + β) = ½(8)(16)(1 + 0.5) = 96 J ✓", "0.5")
+    note(doc, "For a rolling cylinder: KE_rot/KE_total = 1/3 ≈ 33.3%. Check: 32/96 = 0.333 ")
+    point(doc, "Alternatively: KE = ½mv²(1 + β) = ½(8)(16)(1 + 0.5) = 96 J ", "0.5")
     sep(doc)
 
     # ── Q1(c) ──
@@ -127,7 +127,7 @@ def answers_set_r1(doc):
     point(doc, "Net force = m_A g − f_k = 8(9.81) − 14.72 = 78.48 − 14.72 = 63.76 N", "1.5")
     point(doc, "a = 63.76/(m_A + m_B) = 63.76/14 = 4.554 m/s²", "2")
     point(doc, "T = m_A(g − a) = 8(9.81 − 4.554) = 8(5.256) = 42.05 N", "1.5")
-    note(doc, "Check: T − f_k = 42.05 − 14.72 = 27.33 N = m_B × a = 6 × 4.554 = 27.32 N ✓")
+    note(doc, "Check: T − f_k = 42.05 − 14.72 = 27.33 N = m_B × a = 6 × 4.554 = 27.32 N ")
     sep(doc)
 
     # ── Q2 ──
@@ -522,7 +522,7 @@ def answers_set_r2(doc):
     marks_note(doc, "FBD [3 marks]:")
     point(doc, "Weight W = 5(9.81) = 49.05 N ↓; Normal N = 49.05 N ↑", "1")
     point(doc, "Kinetic friction f_k = μ_k N = 0.3(49.05) = 14.715 N → (forward — belt drags package)", "1")
-    point(doc, "Package is slower than belt → relative motion of package w.r.t. belt is backward → friction forward ✓", "1")
+    point(doc, "Package is slower than belt → relative motion of package w.r.t. belt is backward → friction forward ", "1")
     marks_note(doc, "Calculations [7 marks]:")
     point(doc, "a = f_k/m = 14.715/5 = 2.943 m/s²", "1")
     point(doc, "t = Δv/a = (4.0 − 1.0)/2.943 = 3.0/2.943 = 1.019 s", "1.5")
@@ -530,7 +530,7 @@ def answers_set_r2(doc):
     point(doc, "s_belt = v_belt × t = 4.0(1.019) = 4.076 m", "0.5")
     point(doc, "Relative sliding = s_belt − s_pkg = 4.076 − 2.547 = 1.529 m", "0.5")
     point(doc, "Heat = f_k × (relative sliding) = 14.715 × 1.529 = 22.50 J", "2")
-    note(doc, "Check: ΔKE_pkg = ½(5)(16 − 1) = 37.5 J; W_friction_on_pkg = f_k × s_pkg = 14.715 × 2.547 = 37.49 J ✓")
+    note(doc, "Check: ΔKE_pkg = ½(5)(16 − 1) = 37.5 J; W_friction_on_pkg = f_k × s_pkg = 14.715 × 2.547 = 37.49 J ")
 
     heading(doc, "Q6 (b)  —  Forced Vibration & Transmissibility [10 marks]", 2)
     point(doc, "Given: m = 100 kg, k = 40000 N/m, c = 800 N·s/m, n = 1500 RPM, F₀ = 500 N")
@@ -597,6 +597,6 @@ if __name__ == "__main__":
         writer(doc)
         path = os.path.join(out, f"DSM_ReExam_Answers_SetR{num}.docx")
         doc.save(path)
-        print(f"  [OK] {path}")
+        print(f"[OK] {path}")
 
     print("\nDone — 2 DSM Re-Exam answer booklets generated.")

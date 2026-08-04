@@ -286,7 +286,7 @@ def build_topic_pdf():
          "Dr. Sunny Nanade, Course Instructor · NMIMS STME Indore", size=8)
 
     doc.build(story)
-    print(f"✅  Topic Mapping PDF → {out}")
+    print(f"Topic Mapping PDF → {out}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -579,7 +579,7 @@ def build_template_pdf():
                        alignment=TA_CENTER)))
 
     doc.build(story)
-    print(f"✅  Student Template PDF → {out}")
+    print(f"Student Template PDF → {out}")
 
 
 # ─── Helper: paragraph style shortcut ────────────────────────────────────────

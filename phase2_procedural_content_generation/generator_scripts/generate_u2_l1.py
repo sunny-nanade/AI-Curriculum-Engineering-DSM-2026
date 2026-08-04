@@ -85,7 +85,7 @@ def generate_notebook():
     Generate complete Unit 2 Lecture 1 notebook from modular content.
     """
     print("="*80)
-    print(" GENERATING UNIT 2 LECTURE 1 NOTEBOOK")
+    print("GENERATING UNIT 2 LECTURE 1 NOTEBOOK")
     print("="*80)
     print("\nAssembling content modules...")
     
@@ -93,26 +93,26 @@ def generate_notebook():
     all_cells = []
     
     # Module 1: Header and Introduction
-    print("  [1/5] Adding header and introduction...")
+    print("[1/5] Adding header and introduction...")
     all_cells.extend(process_content_cells(HEADER_CELLS))
     
     # Module 2: Newton's Laws Theory
-    print("  [2/5] Adding Newton's Laws theory...")
+    print("[2/5] Adding Newton's Laws theory...")
     all_cells.extend(process_content_cells(NEWTONS_LAWS_CELLS))
     
     # Module 3: Example 1 - Inclined Plane
-    print("  [3/5] Adding Example 1 (Inclined Plane)...")
+    print("[3/5] Adding Example 1 (Inclined Plane)...")
     all_cells.extend(process_content_cells(EXAMPLE_INCLINE_CELLS))
     
     # Module 4: Example 2 - Atwood Machine
-    print("  [4/5] Adding Example 2 (Atwood Machine)...")
+    print("[4/5] Adding Example 2 (Atwood Machine)...")
     all_cells.extend(process_content_cells(EXAMPLE_ATWOOD_CELLS))
     
     # Module 5: Practice Problems and Summary
-    print("  [5/5] Adding practice problems and summary...")
+    print("[5/5] Adding practice problems and summary...")
     all_cells.extend(process_content_cells(PRACTICE_AND_SUMMARY_CELLS))
     
-    print(f"\n✓ Total cells assembled: {len(all_cells)}")
+    print(f"\nTotal cells assembled: {len(all_cells)}")
     
     # Create notebook structure
     notebook = {
@@ -144,24 +144,24 @@ def generate_notebook():
     output_path = Path(__file__).parent.parent / "notebooks" / "Teacher" / "T_U2_L1_Newtons_Laws_Force_Formulation.ipynb"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
-    print(f"\n📝 Writing notebook to: {output_path}")
+    print(f"\nWriting notebook to: {output_path}")
     
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(notebook, f, indent=1, ensure_ascii=False)
     
-    print("✓ Notebook generated successfully!")
+    print("Notebook generated successfully!")
     
     # Statistics
     markdown_cells = sum(1 for cell in all_cells if cell["cell_type"] == "markdown")
     code_cells = sum(1 for cell in all_cells if cell["cell_type"] == "code")
     
     print("\n" + "="*80)
-    print(" GENERATION STATISTICS")
+    print("GENERATION STATISTICS")
     print("="*80)
-    print(f"  Total cells:     {len(all_cells)}")
-    print(f"  Markdown cells:  {markdown_cells}")
-    print(f"  Code cells:      {code_cells}")
-    print(f"  Output file:     {output_path.name}")
+    print(f"Total cells:     {len(all_cells)}")
+    print(f"Markdown cells:  {markdown_cells}")
+    print(f"Code cells:      {code_cells}")
+    print(f"Output file:     {output_path.name}")
     print("="*80)
     
     return output_path
@@ -169,15 +169,15 @@ def generate_notebook():
 if __name__ == "__main__":
     try:
         output_file = generate_notebook()
-        print(f"\n✅ SUCCESS! Notebook ready at:")
-        print(f"   {output_file}")
-        print("\n💡 Next steps:")
-        print("   1. Open notebook in Jupyter/VS Code")
-        print("   2. Run all cells to verify code executes")
-        print("   3. Create student version using generate_all_students.py pattern")
+        print(f"\nSUCCESS! Notebook ready at:")
+        print(f"{output_file}")
+        print("\nNext steps:")
+        print("1. Open notebook in Jupyter/VS Code")
+        print("2. Run all cells to verify code executes")
+        print("3. Create student version using generate_all_students.py pattern")
         
     except Exception as e:
-        print(f"\n❌ ERROR: {e}")
+        print(f"\nERROR: {e}")
         import traceback
         traceback.print_exc()
         sys.exit(1)
