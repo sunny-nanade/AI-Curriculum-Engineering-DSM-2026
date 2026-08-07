@@ -71,7 +71,7 @@ for bar, score in zip(bars2, scores):
                 f'{score:.2f}', ha='center', va='bottom', fontsize=10, fontweight='bold')
 axes[0].annotate('', xy=(1, 3.28), xytext=(0, 1.96),
                 arrowprops=dict(arrowstyle='->', color='green', lw=2))
-axes[0].text(0.5, 2.6, 'g = 0.43\n(Medium Gain)', ha='center', fontsize=9, color='green', fontweight='bold')
+axes[0].text(0.5, 2.6, 'g = 0.50\n(Medium Gain)', ha='center', fontsize=9, color='green', fontweight='bold')
 
 # Right: Self-Efficacy
 categories_se = ['Pre-Exhibition', 'Post-Exhibition']
