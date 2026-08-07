@@ -1,41 +1,46 @@
 """
 Generate charts for the RRSPBL/JEET Research Paper on SF-PBL.
-All values are from the actual rubric analysis (rubric_analysis_results.py)
-and survey_summary_for_paper.txt.
+All values are independently recomputed from the ground-truth source data
+(Evaluation_Rubric_Sheets.xlsx via recompute_rubric.py; DSM_Survey_Raw_PrePost.csv),
+excluding the one student absent for the entire exhibition day (N=53, consistent
+with the consenting survey cohort used throughout the paper).
 """
+import os
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
 
-OUT = r"d:/Sunny/Paper/RRSPBL_2026/"
+OUT = os.path.dirname(os.path.abspath(__file__)) + "/"
 
 # ─── CHART 1: Domain Performance Bar Chart ──────────────────────────────────
 domains = ['Manufacturing', 'Industrial\nAutomation', 'Communication', 'HR & Behavioural\nScience', 'Mathematics', 'IP &\nInnovation']
-means   = [13.90, 17.02, 13.07, 12.87, 12.76, 12.32]
+means   = [13.94, 17.09, 13.26, 13.02, 12.77, 12.53]
 maxes   = [16,    20,    16,    16,    16,    16]
-sds     = [1.06,  2.07,  2.39,  2.29,  2.66,  2.66]
+sds     = [1.23,  2.18,  2.13,  2.28,  2.67,  2.68]
 pcts    = [m/mx*100 for m, mx in zip(means, maxes)]
 
 fig, ax = plt.subplots(figsize=(8, 4.5))
 colors = ['#2ecc71' if p >= 85 else '#f39c12' if p >= 79 else '#e74c3c' for p in pcts]
 bars = ax.bar(domains, pcts, color=colors, edgecolor='black', linewidth=0.5, width=0.6)
-ax.errorbar(domains, pcts, yerr=[s/mx*100 for s, mx in zip(sds, maxes)],
+yerrs = [s/mx*100 for s, mx in zip(sds, maxes)]
+ax.errorbar(domains, pcts, yerr=yerrs,
             fmt='none', color='black', capsize=4, linewidth=1.5, capthick=1.5)
 
 ax.set_ylabel('Score as % of Maximum', fontsize=11)
-ax.set_title('Fig. 1: Expert Panel Domain Scores — 17 Teams (N=54 students)', fontsize=11, fontweight='bold')
-ax.set_ylim(50, 100)
+ax.set_title('Fig. 1: Expert Panel Domain Scores — 17 Teams (N=53 students)', fontsize=11, fontweight='bold')
+ax.set_ylim(50, 105)
 ax.axhline(y=np.mean(pcts), color='navy', linestyle='--', linewidth=1, label=f'Overall Mean = {np.mean(pcts):.1f}%')
 ax.legend(fontsize=9)
 ax.tick_params(axis='x', labelsize=9)
 ax.tick_params(axis='y', labelsize=9)
 ax.set_ylabel('Score (% of Domain Maximum)', fontsize=10)
 
-for bar, pct, mean, mx in zip(bars, pcts, means, maxes):
-    ax.text(bar.get_x() + bar.get_width()/2., bar.get_height() + 0.5,
-            f'{mean:.1f}/{mx}\n({pct:.1f}%)', ha='center', va='bottom', fontsize=7.5, fontweight='bold')
+for bar, pct, mean, mx, yerr in zip(bars, pcts, means, maxes, yerrs):
+    ax.text(bar.get_x() + bar.get_width()/2., pct + yerr + 1.0,
+            f'{mean:.1f}/{mx}\n({pct:.1f}%)', ha='center', va='bottom', fontsize=7.5, fontweight='bold',
+            bbox=dict(facecolor='white', alpha=0.75, edgecolor='none', pad=1))
 
 legend_patches = [
     mpatches.Patch(color='#2ecc71', label='≥85% (Strong)'),
@@ -55,7 +60,7 @@ fig, axes = plt.subplots(1, 2, figsize=(8, 3.8))
 
 # Left: Knowledge Gain
 categories = ['Pre-Test', 'Post-Test']
-scores = [1.94, 3.28]
+scores = [1.96, 3.28]
 colors_kg = ['#95a5a6', '#2980b9']
 bars2 = axes[0].bar(categories, scores, color=colors_kg, edgecolor='black', linewidth=0.5, width=0.4)
 axes[0].set_ylim(0, 5)
@@ -64,9 +69,9 @@ axes[0].set_title('Knowledge Gain (MCQ)\nN=53 Students', fontsize=10, fontweight
 for bar, score in zip(bars2, scores):
     axes[0].text(bar.get_x() + bar.get_width()/2., bar.get_height() + 0.05,
                 f'{score:.2f}', ha='center', va='bottom', fontsize=10, fontweight='bold')
-axes[0].annotate('', xy=(1, 3.28), xytext=(0, 1.94),
+axes[0].annotate('', xy=(1, 3.28), xytext=(0, 1.96),
                 arrowprops=dict(arrowstyle='->', color='green', lw=2))
-axes[0].text(0.5, 2.6, 'g = 0.44\n(Medium Gain)', ha='center', fontsize=9, color='green', fontweight='bold')
+axes[0].text(0.5, 2.6, 'g = 0.43\n(Medium Gain)', ha='center', fontsize=9, color='green', fontweight='bold')
 
 # Right: Self-Efficacy
 categories_se = ['Pre-Exhibition', 'Post-Exhibition']
