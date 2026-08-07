@@ -1,7 +1,7 @@
 # AI-Augmented Curriculum Engineering — Dynamic Systems Modeling (DSM)
 
 **Companion code & data repository for:**
-> Nanade, S., Dash, D., Sarkar, S., & Anne, K. (2026). *End-to-End AI-Augmented Curriculum Engineering: Automated Content Generation, Assessment, and SF-PBL Evaluation in Undergraduate Dynamics.* Submitted to *Computers & Education: Artificial Intelligence* (Elsevier).
+> Nanade, S., Dash, D., Sarkar, S., & Anne, K. (2026). *End-to-End AI-Augmented Curriculum Engineering: Automated Content Generation, Assessment, and SF-PBL Evaluation in Undergraduate Dynamics.* Submitted to *Computers and Education Open* (Elsevier).
 
 This repository contains the instructor-side automation pipeline described in the paper: the AI-assisted curriculum-planning process, the procedural content-generation scripts that produced the course's Jupyter notebooks, the deterministic assessment-generation engine, and the evaluation scripts used to produce the paper's Results (Table 1, Figures 1–2). It documents the **Dynamic Systems Modeling (DSM)** course (702MH0C023), B.Tech Mechatronics Engineering, Semester IV, MPSTME, SVKM's NMIMS, Mumbai (Jan–Apr 2026).
 
@@ -67,4 +67,4 @@ Original code and course materials in this repository are released under the MIT
 
 ## Citation
 
-If you use this repository, please cite the CAEAI manuscript above, and, where relevant to the SF-PBL pedagogical framework itself, the companion Frontiers in Education submission.
+If you use this repository, please cite the Computers and Education Open manuscript above, and, where relevant to the SF-PBL pedagogical framework itself, the companion Frontiers in Education submission.
